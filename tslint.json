@@ -140,13 +140,15 @@
       true,
       "attribute",
       "app",
-      "camelCase"
+      "camelCase",
+      "idr"
     ],
     "component-selector": [
       true,
       "element",
       "app",
-      "kebab-case"
+      "kebab-case",
+      "idr"
     ]
   }
 }

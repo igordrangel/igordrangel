@@ -1,0 +1,16 @@
+<section class="content-projetos"></section>
+<h2>Meus Projetos</h2>
+<p>Agora vamos ao que interessa né...kkkkk, seguem abaixo meus projetos:</p>
+<div class="content-items">
+	<mat-card *ngFor="let item of projetos">
+		<mat-card-header>
+			<img [alt]="item.img.alt" [src]="item.img.src" mat-card-avatar/>
+			<mat-card-title>{{item.title}}</mat-card-title>
+			<mat-card-subtitle>{{item.subtitle}}</mat-card-subtitle>
+		</mat-card-header>
+		<mat-card-actions>
+	    <a [href]="item.linkGitHub" mat-button target="_blank">GitHub</a>
+	    <a *ngIf="item.linkNpm" [href]="item.linkNpm" mat-button target="_blank">NPM</a>
+	  </mat-card-actions>
+	</mat-card>
+</div>
