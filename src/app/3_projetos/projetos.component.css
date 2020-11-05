@@ -1,0 +1,10 @@
+.content-projetos hr {border-style: dashed;color: #FFFFFF;margin: 20px 0;width: 60%;}
+.content-projetos h2 {color: #FFFFFF;line-height: 1.2em;}
+.content-projetos p {color: #FFFFFF;font-size: 1.2em;font-weight: normal;line-height: 1.4em;opacity: .5;text-align: left;}
+.content-projetos .content-items {display: flex;flex-wrap: wrap;justify-content: space-between;}
+.content-projetos .content-items mat-card {background: transparent;border: 1px dashed #FFFFFF;box-sizing: border-box;color: #FFFFFF;display: flex;flex-direction: column;justify-content: space-between;margin: 5px;width: calc((100% - 42px) / 3);}
+.content-projetos .content-items mat-card img {background: #FFFFFF;}
+.content-projetos .content-items mat-card mat-card-title {font-size: 1em;}
+.content-projetos .content-items mat-card mat-card-subtitle {color: #FFFFFF;font-size: .8em;opacity: .6;}
+.content-projetos .content-items mat-card mat-card-content {padding: 15px 0;}
+.content-projetos .content-items mat-card mat-card-actions {display: flex;justify-content: flex-end;}

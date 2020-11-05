@@ -9,6 +9,7 @@ import { ProjetosComponent } from './3_projetos/projetos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatIconModule,
     MatCardModule,
     MatButtonModule,
     AppRoutingModule
