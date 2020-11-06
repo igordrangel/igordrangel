@@ -13,4 +13,5 @@
 @media screen and (max-width: 960px) {
 .content-projetos .content-items {flex-direction: column;padding: 1px;}
 .content-projetos .content-items mat-card {margin: 5px !important;width: 100%;}
+.content-projetos hr {width: 100%;}
 }

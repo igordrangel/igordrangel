@@ -13,4 +13,5 @@
 @media screen and (max-width: 960px) {
 .content-introducao figure {flex-direction: column;margin-bottom: 20px;}
 .content-introducao figure figcaption h1 {font-size: 1.5em;text-align: center;}
+.content-introducao hr {width: 100%;}
 }
