@@ -4,7 +4,7 @@ Eu sou Desenvolvedor Fullstack, porém, tenho me especializado mais em Frontend 
 novidades, gosto muito de novos desafios e de criar soluções alternativas em caso de não encontrada uma solução pronta
 no mercado.
 
-## ⚡ Tecnologias que tenho Trabalho
+## ⚡ Tecnologias que Trabalho
 
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
