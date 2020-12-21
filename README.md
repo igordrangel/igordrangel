@@ -1,33 +1,27 @@
 ### Olá, me chamo Igor, seja Bem-Vindo! 👋
 
-> Atualmente estou cursando <strong>Bacharelado em Engenharia de Software</strong> e encontro-me empregado como <strong>Supervisor de Desenvolvimento</strong> em uma empresa de Empréstimos Consignados, onde crio soluções WEB como <strong>Aplicativos</strong> e <strong>Sistemas WEB</strong>, além de realizar automações com <strong>WEB Scrapping</strong> e realizar manutenções em Sistemas Legado.
+Eu sou Desenvolvedor Fullstack, porém, tenho me especializado mais em Frontend atualmente. Sempre fui curioso, ligado
+nas novidades, gosto muito de novos desafios e de criar soluções alternativas em caso de não encontrado uma solução
+pronta no mercado.
 
-##### Possuo experiência com as seguintes Tecnologias:
-<ul>
-    <li>PHP 7
-        <ul>
-            <li>Symfony</li>
-            <li>Doctrine</li>
-        </ul>
-    </li>
-    <li>Node.js
-        <ul>
-            <li>Express</li>
-            <li>TypeORM</li>
-        </ul>
-    </li>
-    <li>Angular 8 ao 10</li>
-    <li>Electron</li>
-    <li>Ionic 3 e 4</li>
-</ul>
+## ⚡ Technologies
 
-### Minha História
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript)
+![Angular](https://img.shields.io/badge/-Angular-E34F26?style=flat-square&logo=angular)
+![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
+![PHP](https://img.shields.io/badge/-PHP-black?style=flat-square&logo=php)
+![Symfony](https://img.shields.io/badge/-Symfony-black?style=flat-square&logo=symfony)
+![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat-square&logo=mysql)
+![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+![BitBucket](https://img.shields.io/badge/-BitBucket-darkblue?style=flat-square&logo=bitbucket)
 
-> Desde novo sempre fui curioso, principalmente em saber como as coisas funcionam por de baixo dos panos...aos 12 anos tomei interesse em consertar computadores, pensando inicialmente em me ajudar nas jogatinas, afinal, não tinha condições de ter um computador bom...e a partir dai, fui conquistado pela informática...kkkkkk
->
-> Aos 16 anos comecei um curso de Montagem e Manutenção pensando em me especializar e começar a ganhar meu dinheiro, porém, aos 18, quando iniciei meu Técnico de Informática, tive meu primeiro contato com programação, e dali em diante foi um caminho sem volta. Primeiro foi o HTML, onde todas as minhas perguntas sobre criação de intefaces gráficas foram respondidas, porém, novas foram surgindo...pensando em deixar meus sites mais bonitos conheci o Bootstrap, e a partir dai comecei a criar sites com ele, porém, me veio uma pergunta...como posso fazer para guardar informações, como crio um sistema? Um pouco mais na frente conheci o PHP, foi amor a primeira vista, afinal, mais uma pergunta foi respondida, porém, novas surgiram, como tudo na tecnologia...
->
-> Aos 21 anos entrei em uma empresa de Empréstimos inicialmente para trabalhar como suporte, mas vi ali um potencial, assim como tudo que se faz em planilha, pode ser transformado em Sistema...vi ali uma oportunidade, criei em casa uma aplicação simples de chamados, e minha ideia era impressionar e ganhar uma oportunidade...apresentei e adoraram a ideia! As coisas evoluíram...criei meu próprio setor e hoje sou Supervisor de um setor de Desenvolvimento.
->
-> Sempre fui o tipo de pessoa autodidata que gosta de novos desafios e principalmente de entender como as coisas funcionam...e como tudo na vida não existe graça sem um pouco de desafio. Mantenho minha mente aberta a novidades e para o que der e vier =).
+![Github Stats](https://github-readme-stats.vercel.app/api?username=igordrangel&count_private=true&show_icons=true&include_all_commits=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=igordrangel&hide=TeX&layout=compact)
+
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=igordrangel)
 
