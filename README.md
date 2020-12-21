@@ -1,8 +1,8 @@
 ### Olá, me chamo Igor, seja Bem-Vindo! 👋
 
-Eu sou Desenvolvedor Fullstack, porém, tenho me especializado mais em Frontend atualmente. Sempre fui curioso, ligado
-nas novidades, gosto muito de novos desafios e de criar soluções alternativas em caso de não encontrado uma solução
-pronta no mercado.
+Eu sou Desenvolvedor Fullstack, porém, tenho me especializado mais em Frontend atualmente. Sempre fui curioso, ligado as
+novidades, gosto muito de novos desafios e de criar soluções alternativas em caso de não encontrada uma solução pronta
+no mercado.
 
 ## ⚡ Technologies
 
