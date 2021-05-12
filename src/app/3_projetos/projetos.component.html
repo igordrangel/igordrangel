@@ -12,6 +12,8 @@
 			<mat-card-content>{{item.content}}</mat-card-content>
 			<mat-card-actions>
 		    <a [href]="item.linkGitHub" mat-button target="_blank">GitHub</a>
+        <a *ngIf="item.linkYoutube" [href]="item.linkYoutube" mat-button target="_blank">Youtube</a>
+        <a *ngIf="item.linkSite" [href]="item.linkSite" mat-button target="_blank">Site</a>
 		    <a *ngIf="item.linkNpm" [href]="item.linkNpm" mat-button target="_blank">NPM</a>
 				<a *ngIf="item.linkPackagist" [href]="item.linkPackagist" mat-button target="_blank">Packagist</a>
 		  </mat-card-actions>

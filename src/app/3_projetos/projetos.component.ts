@@ -19,7 +19,8 @@ export class ProjetosComponent implements OnInit {
         alt: 'Pacote de utilitários TypeScript'
       },
       linkGitHub: 'https://github.com/igordrangel/koala-utils',
-      linkNpm: 'https://www.npmjs.com/package/koala-utils'
+      linkNpm: 'https://www.npmjs.com/package/koala-utils',
+      linkYoutube: 'https://www.youtube.com/playlist?list=PLWTnDWtorUC3RTHtt99JdsYhq5tH2Z0LU'
     }, {
       title: 'ngx-koala',
       subtitle: 'npm i ngx-koala',
@@ -29,7 +30,8 @@ export class ProjetosComponent implements OnInit {
         alt: 'Template Angular utilizando como base o Angular Material'
       },
       linkGitHub: 'https://github.com/igordrangel/koala-angular-template',
-      linkNpm: 'https://www.npmjs.com/package/ngx-koala'
+      linkNpm: 'https://www.npmjs.com/package/ngx-koala',
+      linkSite: 'https://koalaui.igordrangel.com.br'
     }, {
       title: 'gambiel-doctrine',
       subtitle: 'composer require igordrangel/gambiel-doctrine',

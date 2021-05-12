@@ -9,4 +9,6 @@ export interface ProjetoInterface {
   linkGitHub: string;
   linkNpm?: string;
   linkPackagist?: string;
+  linkSite?: string;
+  linkYoutube?: string;
 }
