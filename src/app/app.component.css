@@ -1,14 +1,1 @@
-header {background: #212121;box-shadow: 0 3px 5px rgba(0, 0, 0, .5);color: #FFFFFF;display: flex;height: 30px;justify-content: space-between;padding: 0 10px;position: relative;z-index: 1;}
-header h1.app-name {font-size: 10pt;}
-header h1.app-name:before {color: #FFFFFF;content: '\f120';font-family: 'Font Awesome 5 Free';font-size: 10pt;font-weight: 900;margin-right: 10px;position: relative;}
-header nav {align-items: center;display: flex;justify-content: space-between;}
-header nav button,
-header nav a {margin: 0 5px;}
-header nav a i:before {color: #FFFFFF;font-family: 'Font Awesome 5 Brands';font-size: 16pt;font-weight: 400;position: relative;top: 2px;}
-header nav a i.github:before {content: '\f09b';}
-header nav a i.linked-in:before {content: '\f08c';}
-header nav a i.whatsapp:before {content: '\f232';}
-main {background: #010D22;box-sizing: border-box;display: block;height: calc(100vh - 60px);overflow: auto;padding: 10px 30px;z-index: 0;}
-main::-webkit-scrollbar {background: #212121;}
-main::-webkit-scrollbar-thumb {background: #616161;}
-footer {align-items: center;background: #212121;color: #FFFFFF;display: flex;height: 30px;justify-content: center;}
+

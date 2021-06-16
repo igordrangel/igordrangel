@@ -1,0 +1,31 @@
+<header class="cabecalho">
+  <div class="cabecalho__content">
+    <div class="cabecalho__content___dots">
+      <div class="cabecalho__content___dots____dots-top">
+        <i class="dot-circle"></i>
+        <i class="dot-circle"></i>
+      </div>
+      <div class="cabecalho__content___dots____dots-bottom">
+        <i class="dot-circle"></i>
+        <i class="dot-circle"></i>
+      </div>
+    </div>
+    <figure class="cabecalho__cabecalho__content___foto-perfil-content">
+      <img alt="Foto de Perfil" src="./assets/profile.jpg">
+      <figcaption>
+        <h1>Olá, me chamo Igor, seja Bem-Vindo! 👋</h1>
+        <p>Eu sou um Desenvolvedor Fullstack, porém, com especialização em Front-End.<br/>Sempre fui curioso, gosto muito de desafios e inovações.</p>
+      </figcaption>
+    </figure>
+    <div class="cabecalho__cabecalho__content___redes-sociais">
+      <h2>Minhas Redes</h2>
+      <ul>
+        <li *ngFor="let redeSocial of redesSociais">
+          <a [href]="redeSocial.link" mat-icon-button target="_blank">
+            <i [ngClass]="redeSocial.icon"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
