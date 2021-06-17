@@ -20,7 +20,7 @@ export class CabecalhoComponent {
       icon: 'linked-in'
     },
     {
-      link: '"https://github.com/igordrangel',
+      link: 'https://github.com/igordrangel',
       icon: 'github'
     }
   ]

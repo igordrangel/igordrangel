@@ -1,4 +1,10 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
+
+export interface CardsInterface {
+  title: string;
+  thumbnail: string;
+  link: string;
+}
 
 @Component({
   selector: 'idr-cards',
@@ -6,5 +12,5 @@ import { Component } from "@angular/core";
   styleUrls: ['cards.component.css']
 })
 export class CardsComponent {
-
+  @Input() cards: CardsInterface[] = [];
 }

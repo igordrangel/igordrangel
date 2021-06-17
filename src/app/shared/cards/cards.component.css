@@ -1,0 +1,7 @@
+.cards {display: flex;justify-content: flex-start;align-items: center;flex-wrap: wrap;width: 100%;box-sizing: border-box;padding: 10px 50px;}
+.cards .card {width: calc((100%/3) - 10px);height: auto;box-shadow: 0 1px 15px rgba(0,0,0,.6);text-decoration: none;color: #fff;text-align: center;border-radius: 10px;overflow: hidden;margin: 0 5px 5px;}
+.cards .card:first-child {margin-left: 0;}
+.cards .card:nth-child(3n) {margin-right: 0;}
+.cards .card figure {margin: 0;padding: 0;}
+.cards .card figure img {width: 100%;height: auto;}
+.cards .card figure figcaption {padding: 15px 20px;background: rgba(0,0,0,.6);}

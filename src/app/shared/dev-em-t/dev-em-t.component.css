@@ -1,0 +1,17 @@
+.dev-em-t-content {position: relative;display: flex;justify-content: center;align-items: flex-start;}
+.dev-em-t-content li {position: relative;padding: 30px 25px;margin: 0 1px;color: #616161;background: #f1f1f1;cursor: zoom-in;}
+.dev-em-t-content__main-stack {display: flex;height: 600px;align-items: center;}
+.dev-em-t-content__description {position: absolute;width: 300px;display: none;text-align: center;color: #fff;}
+.dev-em-t-content__description li {background: transparent;border: 1px dashed #fff;color: #fff;cursor: default;}
+.dev-em-t-content li:hover .dev-em-t-content__description {display: block;}
+.dev-em-t-content li:nth-child(1) .dev-em-t-content__description {top: 80px;left: -150px;}
+.dev-em-t-content li:nth-child(2) .dev-em-t-content__description {top: 80px;left: -200px;}
+.dev-em-t-content li:nth-child(3) .dev-em-t-content__description {top: 100px;left: -350px;}
+.dev-em-t-content li:nth-child(4) .dev-em-t-content__description {top: 80px;right: -210px;}
+.dev-em-t-content li:nth-child(5) .dev-em-t-content__description {top: 80px;right: -150px;}
+.dev-em-t-content__description:before {position: relative;display: block;margin: 0 auto;content: "";}
+.dev-em-t-content li:nth-child(1) .dev-em-t-content__description:before,
+.dev-em-t-content li:nth-child(2) .dev-em-t-content__description:before {width: 150px;height: 50px;border-right: 1px dashed #ffffff;}
+.dev-em-t-content li:nth-child(3) .dev-em-t-content__description:before {position: absolute;top: 0;right: -80px;width: 80px;height: 40px;border-bottom: 1px dashed #ffffff;}
+.dev-em-t-content li:nth-child(4) .dev-em-t-content__description:before,
+.dev-em-t-content li:nth-child(5) .dev-em-t-content__description:before {width: 150px;height: 50px;border-left: 1px dashed #ffffff;}

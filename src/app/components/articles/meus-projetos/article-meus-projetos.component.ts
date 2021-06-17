@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { CardsInterface } from "../../../shared/cards/cards.component";
 
 @Component({
   selector: 'idr-article-meus-projetos',
@@ -6,4 +7,13 @@ import { Component } from "@angular/core";
   styleUrls: ['../articles.component.css']
 })
 export class ArticleMeusProjetosComponent {
+  public cards: CardsInterface[] = [{
+    title: 'Koala UI',
+    link: 'https://koalaui.igordrangel.com.br',
+    thumbnail: './assets/koala-ui.jpg'
+  },{
+    title: 'Koala Utils',
+    link: 'https://www.npmjs.com/package/koala-utils',
+    thumbnail: './assets/koala-utils.jpg'
+  }];
 }

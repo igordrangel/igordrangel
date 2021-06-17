@@ -1,7 +1,7 @@
 .cabecalho {display: flex;flex-direction: column;justify-content: center;align-items: center;padding: 0 20px 0;margin-bottom: 180px;box-sizing: border-box;box-shadow: 0 3px 10px rgba(0,0,0,.3);background: url("../../../assets/cabecalho-wallpapper.jpg") no-repeat;}
-.cabecalho__content {position: relative;top: 180px;display: flex;flex-direction: column;justify-content: center;align-items: center;text-align: center;padding: 50px;width: 40%;background: #1d1d1d;border-radius: 20px;color: #fff;box-shadow: 0 1px 3px rgba(0,0,0,.3);}
-.cabecalho__content___dots {position: absolute;display: flex;flex-direction: column;justify-content: space-between;width: 100%;height: 100%;top: 0;z-index: 0;padding: 10px;box-sizing: border-box;}
-.cabecalho__content___dots i:before {font-family: 'Font Awesome 5 Free';font-size: 16pt;font-weight: 400;position: relative;top: 2px;}
+.cabecalho__content {position: relative;top: 180px;display: flex;flex-direction: column;justify-content: center;align-items: center;text-align: center;padding: 50px;width: 40%;background: #1d1d1d;border-radius: 20px;color: #fff;box-shadow: 0 3px 6px rgba(0,0,0,.3);}
+.cabecalho__content___dots {position: absolute;display: flex;flex-direction: column;justify-content: space-between;width: 100%;height: 100%;top: 0;z-index: 0;padding: 10px 13px;box-sizing: border-box;}
+.cabecalho__content___dots i:before {font-family: 'Font Awesome 5 Free';font-size: 10pt;font-weight: 400;position: relative;top: 2px;}
 .cabecalho__content___dots i.dot-circle:before {content: '\f192';color: #f1f1f1;}
 .cabecalho__content___dots____dots-top,
 .cabecalho__content___dots____dots-bottom {display: flex;justify-content: space-between;}
@@ -9,6 +9,8 @@
 .cabecalho__cabecalho__content___foto-perfil-content img {width: 120px;height: auto;border-radius: 50%;box-shadow: 1px 3px 6px rgba(0,0,0,.3);}
 .cabecalho__cabecalho__content___foto-perfil-content figcaption {padding: 10px;}
 .cabecalho__cabecalho__content___foto-perfil-content figcaption h1 {margin: 0;padding: 0 0 10px;}
+.cabecalho__cabecalho__content___foto-perfil-content____hand {position: relative;display: inline-flex;top: -5px;left: -15px;animation: shakeHand 1s ease-in-out infinite alternate;}
+@keyframes shakeHand {from {transform: rotate(0);} to {transform: rotate(20deg);}}
 .cabecalho__cabecalho__content___redes-sociais {border-radius: 20px;background: #f1f1f1;padding: 10px 50px;color: #1d1d1d;}
 .cabecalho__cabecalho__content___redes-sociais h2 {color: rgba(0,0,0,.6);font-weight: bold;margin: 0;}
 .cabecalho__cabecalho__content___redes-sociais li {display: inline-block;}
