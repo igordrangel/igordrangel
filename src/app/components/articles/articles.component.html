@@ -1,6 +1,3 @@
 <main>
-  <idr-article-dev-em-t></idr-article-dev-em-t>
-  <idr-article-meus-projetos></idr-article-meus-projetos>
-  <idr-article-desafios></idr-article-desafios>
-  <idr-article-certificados></idr-article-certificados>
+  <idr-dynamic-component *ngIf="currentArticle$ | async as currentArticle" [dynamicComponent]="currentArticle"></idr-dynamic-component>
 </main>

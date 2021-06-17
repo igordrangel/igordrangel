@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { CardsInterface } from "../../../shared/cards/cards.component";
+import { CardsInterface } from "../../../shared/components/cards/cards.component";
 
 @Component({
   selector: 'idr-article-meus-projetos',

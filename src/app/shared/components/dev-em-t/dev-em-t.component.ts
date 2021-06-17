@@ -12,4 +12,5 @@ export interface DevEmTStacksInterface {
 })
 export class DevEmTComponent {
   @Input('stacks') public stacks: DevEmTStacksInterface[] = [];
+  public currentDescription: string;
 }

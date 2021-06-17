@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { DynamicArticle } from "../../shared/services/dynamic-article/dynamic-article";
 
 @Component({
   selector: 'idr-articles',
@@ -6,4 +7,5 @@ import { Component } from "@angular/core";
   styleUrls: ['articles.component.css']
 })
 export class ArticlesComponent {
+  currentArticle$ = DynamicArticle.currentArticle;
 }

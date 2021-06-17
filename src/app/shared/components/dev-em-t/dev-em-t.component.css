@@ -1,0 +1,9 @@
+.content {display: flex;justify-content: space-between;align-items: center;}
+.dev-em-t-content {position: relative;display: flex;justify-content: center;align-items: flex-start;}
+.dev-em-t-content li {position: relative;padding: 30px 25px;margin: 0 1px;color: #616161;background: #f1f1f1;cursor: pointer;width: 80px;height: 40px;display: flex;align-items: center;}
+.dev-em-t-content__main-stack {display: flex;height: 50vh!important;align-items: center;}
+.dev-em-t-content__description {position: relative;display: block;width: 40vw;box-sizing: border-box;margin-left: 30px;padding: 30px;border-radius: 30px;background: #f1f1f1;animation: animateDescription .2s ease-in;}
+@keyframes animateDescription {
+  from {right: -40vw;}
+  to {right: 0;}
+}

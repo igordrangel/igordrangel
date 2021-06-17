@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { DevEmTStacksInterface } from "../../../shared/dev-em-t/dev-em-t.component";
+import { DevEmTStacksInterface } from "../../../shared/components/dev-em-t/dev-em-t.component";
 import { DomSanitizer } from "@angular/platform-browser";
 
 @Component({
