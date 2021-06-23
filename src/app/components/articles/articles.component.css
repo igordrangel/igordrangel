@@ -1,7 +1,7 @@
-article {display: flex;flex-direction: column;align-items: center;justify-content: center;height: calc(100vh - 80px);}
-article h2 {position: relative;display: block;text-align: center;padding: 10px 30px;margin: 0 auto 30px;width: fit-content;color: rgba(255,255,255,.7);font-size: 2em;}
+article {display: flex;flex-direction: column;align-items: center;justify-content: center;height: calc(100vh - 145px);box-sizing: border-box;}
+article h2 {position: relative;display: block;text-align: center;padding: 10px 30px;margin: 15px auto;width: fit-content;color: rgba(255,255,255,.7);font-size: 2em;}
 section {display: flex;justify-content: flex-start;align-items: center;padding: 80px 150px;box-sizing: border-box;width: 100%;max-height: calc(100vh - 80px);overflow: hidden;}
-section.introducao {padding: 10% 150px;}
+section.introducao {padding: 10% 100px;}
 section.introducao p {width: calc(100% - 50px);padding: 0 80px;margin-bottom: 50px;box-sizing: border-box;text-align: center;font-size: 4em;line-height: 1.5em;color: #fff;}
 .redes-sociais {display: flex;flex-direction: column;justify-content: center;align-items: center;color: #fff;}
 .redes-sociais ul {display: flex;flex-direction: column;justify-content: center;align-items: center;width: 50px;}
@@ -14,9 +14,15 @@ section.introducao p {width: calc(100% - 50px);padding: 0 80px;margin-bottom: 50
 .redes-sociais i.github:before {content: '\f09b';}
 .redes-sociais i.linked-in:before {content: '\f08c';}
 .redes-sociais i.whatsapp:before {content: '\f232';}
-@media (max-width: 1499px) and (orientation: landscape) {
-  section.introducao p {font-size: 3em;}
+
+@media (min-width: 1025px) and (orientation: landscape) {
+  section.introducao p {font-size: 3.5em;}
 }
-@media (max-width: 1199px) and (orientation: landscape) {
-  section.introducao p {font-size: 2em;}
+@media (max-width: 1024px) {
+  section.introducao {padding: 150px 50px;flex-direction: column-reverse;}
+  section.introducao p {font-size: 2em;width: 100%;padding: 0;}
+  .redes-sociais ul {width: 80vw;flex-direction: row;}
+  .redes-sociais li {display: flex;justify-content: center;align-items: center;width: fit-content;}
+  .redes-sociais li:after {display: inline-block;margin: 0;content: '';width: 40px;height: 1px;border-left: none;border-top: 1px solid #fff;}
+  article {overflow: auto;padding: 10px 0;justify-content: flex-start;}
 }

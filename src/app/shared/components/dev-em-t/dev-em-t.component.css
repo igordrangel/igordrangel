@@ -7,3 +7,21 @@
   from {right: -40vw;}
   to {right: 0;}
 }
+
+@media (min-width: 1025px) and (max-width: 1299px) and (orientation: landscape) {
+  .dev-em-t-content li {width: 70px;height: 30px;padding: 20px;font-size: .9em;}
+}
+@media (min-width: 620px) and (max-width: 1024px) {
+  .content {flex-direction: column;}
+  .dev-em-t-content {margin-bottom: 30px;}
+  .dev-em-t-content li {width: 70px;height: 30px;padding: 20px;font-size: .9em;}
+  .dev-em-t-content__main-stack {height: 35vh!important;}
+  .dev-em-t-content__description {margin-left: 0;width: 80vw;}
+}
+@media (max-width: 620px) {
+  .content {flex-direction: column;}
+  .dev-em-t-content {margin-bottom: 30px;}
+  .dev-em-t-content li {width: 60px;height: 30px;padding: 15px;font-size: .8em;}
+  .dev-em-t-content__main-stack {height: 35vh!important;}
+  .dev-em-t-content__description {margin-left: 0;width: 80vw;}
+}

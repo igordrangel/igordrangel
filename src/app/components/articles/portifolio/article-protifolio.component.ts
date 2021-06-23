@@ -2,12 +2,12 @@ import { Component } from "@angular/core";
 import { CardsInterface } from "../../../shared/components/cards/cards.component";
 
 @Component({
-  selector: 'idr-article-desafios',
-  templateUrl: 'article-desafios.component.html',
+  selector: 'idr-article-portifolio',
+  templateUrl: 'article-protifolio.component.html',
   styleUrls: ['../articles.component.css']
 })
-export class ArticleDesafiosComponent {
-  public cards: CardsInterface[] = [{
+export class ArticleProtifolioComponent {
+  public desafios: CardsInterface[] = [{
     title: 'Frontend Mentor | Launch countdown timer',
     link: 'https://github.com/igordrangel/launch-countdown-timer',
     thumbnail: './assets/launch-countdown-timer.jpg'
@@ -19,5 +19,14 @@ export class ArticleDesafiosComponent {
     title: 'Desafio Rede Globo | Aplicação React',
     link: 'https://github.com/igordrangel/desafio-globo',
     thumbnail: './assets/desafio-globo.jpg'
+  }];
+  public projetos: CardsInterface[] = [{
+    title: 'Koala UI',
+    link: 'https://koalaui.igordrangel.com.br',
+    thumbnail: './assets/koala-ui.jpg'
+  },{
+    title: 'Koala Utils',
+    link: 'https://www.npmjs.com/package/koala-utils',
+    thumbnail: './assets/koala-utils.jpg'
   }];
 }

@@ -1,10 +1,9 @@
 import { Component, OnInit, Type } from "@angular/core";
 import { ArticleIntroducaoComponent } from "../articles/introducao/article-introducao.component";
 import { ArticleDevEmTComponent } from "../articles/dev-em-t/article-dev-em-t.component";
-import { ArticleMeusProjetosComponent } from "../articles/meus-projetos/article-meus-projetos.component";
-import { ArticleDesafiosComponent } from "../articles/desafios/article-desafios.component";
 import { ArticleCertificadosComponent } from "../articles/certificados/article-certificados.component";
 import { DynamicArticleService } from "../../shared/services/dynamic-article/dynamic-article.service";
+import { ArticleProtifolioComponent } from "../articles/portifolio/article-protifolio.component";
 
 @Component({
   selector: 'idr-cabecalho',
@@ -21,13 +20,9 @@ export class CabecalhoComponent implements OnInit {
     active: false,
     component: ArticleDevEmTComponent
   }, {
-    label: 'Meus Projetos',
+    label: 'Portifólio',
     active: false,
-    component: ArticleMeusProjetosComponent
-  }, {
-    label: 'Meus Desafios',
-    active: false,
-    component: ArticleDesafiosComponent
+    component: ArticleProtifolioComponent
   }, {
     label: 'Certificados',
     active: false,

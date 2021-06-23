@@ -6,8 +6,11 @@
         <h1>Olá, me chamo Igor, seja Bem-Vindo!</h1>
       </figcaption>
     </figure>
-    <nav>
-      <button *ngFor="let option of menuOptions" (click)="changeArticle(option.component)" [ngClass]="{'active': option.active}" mat-button>
+    <button (click)="navbar.classList.toggle('show')" class="btn-collapse-menu" mat-icon-button>
+      <mat-icon>{{navbar.classList.contains('show') ? 'close' : 'menu'}}</mat-icon>
+    </button>
+    <nav #navbar>
+      <button *ngFor="let option of menuOptions" (click)="changeArticle(option.component);navbar.classList.remove('show')" [ngClass]="{'active': option.active}" mat-button>
         {{option.label}}
       </button>
     </nav>
