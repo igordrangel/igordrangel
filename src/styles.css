@@ -35,3 +35,7 @@ button.outline {border: 1px solid #fff;}
 .dev-em-t-content__description h3 {font-weight: bold;color: rgba(0,0,0,.6);margin: 20px 0;padding: 0;}
 .dica {padding: 20px;color: #ffffff;line-height: 2em;text-align: center;}
 .dica:before {font-family: 'Font Awesome 5 Free';font-size: 14pt;font-weight: 400;position: relative;top: 2px;color: #fff;content: '\f059';padding: 0 5px 0 0;}
+
+@media (max-width: 1024px) {
+  body {overflow: auto;}
+}
