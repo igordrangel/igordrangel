@@ -11,4 +11,6 @@
   .cards .card {width: 100%;margin: 0 0 10px;}
   .cards .card:first-child {margin-top: 0;}
   .cards .card:nth-child(3n) {margin-bottom: 0;}
+  .cards .card figure img {height: auto;}
+  .cards .card figure figcaption {position: relative;bottom: 0;left: 0;width: 100%;box-sizing: border-box;}
 }
