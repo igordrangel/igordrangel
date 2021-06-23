@@ -1,0 +1,18 @@
+<header class="cabecalho">
+  <div class="cabecalho__content">
+    <figure class="cabecalho__cabecalho__content___foto-perfil-content">
+      <img alt="Foto de Perfil" src="./assets/profile.jpg">
+      <figcaption>
+        <h1>Olá, me chamo Igor, seja Bem-Vindo!</h1>
+      </figcaption>
+    </figure>
+    <button (click)="navbar.classList.toggle('show')" class="btn-collapse-menu" mat-icon-button>
+      <mat-icon>{{navbar.classList.contains('show') ? 'close' : 'menu'}}</mat-icon>
+    </button>
+    <nav #navbar>
+      <button *ngFor="let option of menuOptions" (click)="changeArticle(option.component);navbar.classList.remove('show')" [ngClass]="{'active': option.active}" mat-button>
+        {{option.label}}
+      </button>
+    </nav>
+  </div>
+</header>

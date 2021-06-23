@@ -1,0 +1,14 @@
+<section class="introducao">
+  <div class="redes-sociais">
+    <ul>
+      <li *ngFor="let redeSocial of redesSociais">
+        <a [href]="redeSocial.link" mat-icon-button target="_blank">
+          <i [ngClass]="redeSocial.icon"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="d-flex direction-column align-center">
+    <p>Eu sou um Desenvolvedor Fullstack, porém, com especialização em <span class="nobr">Front-End</span>.<br/>Sempre fui curioso, gosto muito de desafios e inovações.</p>
+  </div>
+</section>
