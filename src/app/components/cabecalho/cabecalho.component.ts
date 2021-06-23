@@ -1,4 +1,4 @@
-import { Component, OnInit, Type } from "@angular/core";
+import { Component, ElementRef, OnInit, Type, ViewChild } from "@angular/core";
 import { ArticleIntroducaoComponent } from "../articles/introducao/article-introducao.component";
 import { ArticleDevEmTComponent } from "../articles/dev-em-t/article-dev-em-t.component";
 import { ArticleCertificadosComponent } from "../articles/certificados/article-certificados.component";
@@ -28,6 +28,7 @@ export class CabecalhoComponent implements OnInit {
     active: false,
     component: ArticleCertificadosComponent
   }]
+  @ViewChild('navbar', {static: false}) private elNavbar: ElementRef<HTMLDivElement>;
 
   constructor(private dynamicArticleService: DynamicArticleService) {
   }
@@ -41,5 +42,18 @@ export class CabecalhoComponent implements OnInit {
       option.active = option.component === article
     });
     this.dynamicArticleService.changeArticle(article);
+  }
+
+  collapseNavbar() {
+    const show = !this.elNavbar.nativeElement.classList.contains('show');
+    if (show) {
+      this.elNavbar.nativeElement.classList.add('show');
+    } else {
+      this.elNavbar.nativeElement.classList.add('animate-hide');
+      setTimeout(() => {
+        this.elNavbar.nativeElement.classList.remove('show');
+        this.elNavbar.nativeElement.classList.remove('animate-hide');
+      }, 200);
+    }
   }
 }

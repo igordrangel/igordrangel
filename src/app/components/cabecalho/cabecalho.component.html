@@ -6,7 +6,7 @@
         <h1>Olá, me chamo Igor, seja Bem-Vindo!</h1>
       </figcaption>
     </figure>
-    <button (click)="navbar.classList.toggle('show')" class="btn-collapse-menu" mat-icon-button>
+    <button (click)="collapseNavbar()" class="btn-collapse-menu" mat-icon-button>
       <mat-icon>{{navbar.classList.contains('show') ? 'close' : 'menu'}}</mat-icon>
     </button>
     <nav #navbar>

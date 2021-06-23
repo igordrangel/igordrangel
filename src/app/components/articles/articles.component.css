@@ -1,4 +1,4 @@
-article {display: flex;flex-direction: column;align-items: center;justify-content: center;height: calc(100vh - 155px);box-sizing: border-box;}
+article {display: flex;flex-direction: column;align-items: center;justify-content: center;height: calc(100vh - 160px);box-sizing: border-box;}
 article h2 {position: relative;display: block;text-align: center;padding: 10px 30px;margin: 15px auto;width: fit-content;color: rgba(255,255,255,.7);font-size: 2em;}
 section {display: flex;justify-content: flex-start;align-items: center;padding: 80px 150px;box-sizing: border-box;width: 100%;max-height: calc(100vh - 80px);overflow: hidden;}
 section.introducao {padding: 10% 100px;}
