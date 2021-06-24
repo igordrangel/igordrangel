@@ -20,7 +20,7 @@ export class CabecalhoComponent implements OnInit {
     active: false,
     component: ArticleDevEmTComponent
   }, {
-    label: 'Portifólio',
+    label: 'Portfólio',
     active: false,
     component: ArticleProtifolioComponent
   }, {
