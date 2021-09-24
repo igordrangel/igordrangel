@@ -26,7 +26,11 @@ export class ArticleProtifolioComponent {
     thumbnail: './assets/koala-ui.jpg'
   },{
     title: 'Koala Utils',
-    link: 'https://www.npmjs.com/package/koala-utils',
+    link: 'https://www.npmjs.com/package/@koalarx/utils',
     thumbnail: './assets/koala-utils.jpg'
+  },{
+    title: 'Tradsoft',
+    link: 'https://tradsoft.com.br',
+    thumbnail: './assets/tradsoft.jpg'
   }];
 }
