@@ -22,7 +22,7 @@ export class ArticleProtifolioComponent {
   }];
   public projetos: CardsInterface[] = [{
     title: 'Koala UI',
-    link: 'https://koalaui.igordrangel.com.br',
+    link: 'https://doc.koalaui.igordrangel.com.br/',
     thumbnail: './assets/koala-ui.jpg'
   },{
     title: 'Koala Utils',
@@ -30,7 +30,7 @@ export class ArticleProtifolioComponent {
     thumbnail: './assets/koala-utils.jpg'
   },{
     title: 'Tradsoft',
-    link: 'https://tradsoft.com.br',
+    link: 'https://github.com/igordrangel?tab=repositories&q=tradsoft&type=&language=&sort=',
     thumbnail: './assets/tradsoft.jpg'
   }];
 }
