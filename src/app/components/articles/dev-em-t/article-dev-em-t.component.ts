@@ -27,7 +27,7 @@ export class ArticleDevEmTComponent {
     <h3>Tecnologias</h3>
     Javascript, Typescript
     <h3>Frameworks</h3>
-    Angular, Ionic, Electron, Koala UI,
+    Angular, Ionic, Electron, Koala UI, Cat UI
     <h3>Bibliotecas</h3>
     Koala Utils, React (Nível Básico), Material Angular UI, Bootstrap, JQuery`
   }, {
