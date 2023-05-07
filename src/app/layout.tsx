@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 import './globals.css'
 import { ContainerPage } from '@/components/ContainerPage'
+import { Footer } from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <ContainerPage>
           <Header />
           {children}
+          <Footer />
         </ContainerPage>
       </body>
     </html>

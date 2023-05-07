@@ -4,7 +4,7 @@ import { RedesSociaisETemas } from './RedesSociaisETemas'
 
 export function Header() {
   return (
-    <header className="flex items-center justify-between box-border pt-6 pb-6">
+    <header className="flex items-center justify-between box-border px-32 py-6">
       <MenuNav />
       <Logo />
       <RedesSociaisETemas />
