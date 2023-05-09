@@ -1,6 +1,4 @@
-'use client'
-
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import Balance from 'react-wrap-balancer'
 
 const quote = {
@@ -42,16 +40,14 @@ export function AnimatedText({ text, className }: AnimatedTextProps) {
         className={`inline-block w-full text-black font-bold capitalize leading-3 ${className}`}
         variants={quote}
         initial="initial"
-        animate="animate"
-      >
+        animate="animate">
         <Balance>
           <div className="leading-[1]">
             {text.split(' ').map((word, index) => (
               <motion.span
                 key={word + '-' + index}
                 className="inline-block leading-3"
-                variants={singleWord}
-              >
+                variants={singleWord}>
                 {word}&nbsp;
               </motion.span>
             ))}
