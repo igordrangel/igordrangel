@@ -17,6 +17,9 @@ export default function Inicio() {
             src={prifilePic}
             alt="Igor Dias Rangel"
             className="w-full h-auto"
+            priority={true}
+            placeholder="blur"
+            blurDataURL="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.bb5affef.png&w=640&q=5"
           />
         </div>
 

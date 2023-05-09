@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="ptbr">
+    <html lang="pt-br">
       <body className={inter.className}>
         <ContainerPage>
           <Header />

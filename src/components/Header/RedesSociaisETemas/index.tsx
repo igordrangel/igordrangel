@@ -1,65 +1,33 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import {
   GithubLogo,
   InstagramLogo,
   LinkedinLogo,
   YoutubeLogo,
 } from 'phosphor-react'
-import { useState } from 'react'
+import { AnimatedLink } from './AnimatedLink'
 
 export function RedesSociaisETemas() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
-
-  function handleTheme() {
-    if (theme === 'dark') {
-      setTheme('light')
-    } else {
-      setTheme('dark')
-    }
-    document.querySelector('main')?.classList.add(theme)
-  }
-
   return (
     <nav className="flex items-center gap-4">
-      <motion.a
-        href="#"
-        target="__blank"
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.9 }}
-      >
+      <AnimatedLink href="#" description="Link para meu Linkedin">
         <LinkedinLogo size={32} />
-      </motion.a>
+      </AnimatedLink>
 
-      <motion.a
-        href="#"
-        target="__blank"
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.9 }}
-      >
+      <AnimatedLink href="#" description="Link para meu Github">
         <GithubLogo size={32} />
-      </motion.a>
+      </AnimatedLink>
 
-      <motion.a
-        href="#"
-        target="__blank"
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.9 }}
-      >
+      <AnimatedLink href="#" description="Link para meu Instagram">
         <InstagramLogo size={32} />
-      </motion.a>
+      </AnimatedLink>
 
-      <motion.a
-        href="#"
-        target="__blank"
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.9 }}
-      >
+      <AnimatedLink href="#" description="Link para meu Youtube">
         <YoutubeLogo size={32} />
-      </motion.a>
+      </AnimatedLink>
 
-      <button onClick={handleTheme}></button>
+      {/* <ThemeSelector /> */}
     </nav>
   )
 }
