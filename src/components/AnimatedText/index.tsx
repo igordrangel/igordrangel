@@ -42,18 +42,16 @@ export function AnimatedText({ text, className }: AnimatedTextProps) {
         initial="initial"
         animate="animate"
       >
-        <Balance>
-          <div className="leading-[1]">
-            {text.split(' ').map((word, index) => (
-              <motion.span
-                key={word + '-' + index}
-                className="inline-block leading-3"
-                variants={singleWord}
-              >
-                {word}&nbsp;
-              </motion.span>
-            ))}
-          </div>
+        <Balance className="leading-[1]">
+          {text.split(' ').map((word, index) => (
+            <motion.span
+              key={word + '-' + index}
+              className="inline-block leading-3"
+              variants={singleWord}
+            >
+              {word}&nbsp;
+            </motion.span>
+          ))}
         </Balance>
       </motion.h1>
     </div>
