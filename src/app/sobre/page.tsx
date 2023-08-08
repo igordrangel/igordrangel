@@ -3,6 +3,8 @@
 import { AnimatedText } from '@/components/AnimatedText'
 import { Biography } from './Biography'
 import { Skills } from './Skills'
+import { Experience } from './Experience'
+import { Education } from './Education'
 
 export default function Sobre() {
   return (
@@ -13,6 +15,8 @@ export default function Sobre() {
       />
       <Biography />
       <Skills />
+      <Experience />
+      <Education />
     </main>
   )
 }
