@@ -10,7 +10,7 @@ import prifilePic from '../../public/me.png'
 
 export default function Inicio() {
   return (
-    <section className="flex items-start text-black w-full h-screen">
+    <section className="flex items-start text-black w-full h-screen dark:text-white">
       <div className="flex items-center justify-between w-full pl-0 pr-32">
         <div className="px-32 py-0 w-1/2">
           <Image
@@ -18,8 +18,7 @@ export default function Inicio() {
             alt="Igor Dias Rangel"
             className="w-full h-auto"
             priority={true}
-            placeholder="blur"
-            blurDataURL="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.bb5affef.png&w=640&q=5"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           />
         </div>
 

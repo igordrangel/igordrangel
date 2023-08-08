@@ -26,8 +26,6 @@ export function RedesSociaisETemas() {
       <AnimatedLink href="#" description="Link para meu Youtube">
         <YoutubeLogo size={32} />
       </AnimatedLink>
-
-      {/* <ThemeSelector /> */}
     </nav>
   )
 }

@@ -18,7 +18,8 @@ export function Biography() {
           src={profileImage}
           alt="Foto de Perfil de Igor Dias Rangel"
           className="w-full h-auto rounded-2xl"
-          loading="lazy"
+          priority={true}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
 

@@ -23,7 +23,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className={inter.className}>
         <ContainerPage>
           <Header />
-          {children}
+          <div className="dark:bg-black">{children}</div>
           <Footer />
         </ContainerPage>
       </body>

@@ -9,7 +9,7 @@ interface CustomLinkProps {
   className: string
 }
 
-export function MenuNav() {
+export function NavBar() {
   function CustomLink({ href, title, className = '' }: CustomLinkProps) {
     const pathname = usePathname()
 
@@ -23,7 +23,7 @@ export function MenuNav() {
           className={`
           h-[2px] inline-block bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
             pathname === href ? 'w-full' : 'w-0'
-          }`}
+          } dark:bg-white`}
         >
           &nbsp;
         </span>
@@ -32,7 +32,7 @@ export function MenuNav() {
   }
 
   return (
-    <nav className="flex items-center gap-8">
+    <nav className="flex items-center gap-8 dark:text-white">
       <CustomLink href="/" title="Inicio" className="mr-4"></CustomLink>
       <CustomLink href="/sobre" title="Sobre" className="mr-4"></CustomLink>
       <CustomLink
