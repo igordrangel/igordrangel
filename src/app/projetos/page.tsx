@@ -46,7 +46,7 @@ export default function Projets() {
             title="CatUI CRUD Sample"
             img={catUiCrudSample}
             github="https://github.com/igordrangel/cat-crud-example"
-            link="https://doc.catui.igordrangel.com.br/guias/criando-uma-aplicacao-de-crud"
+            link="https://cat-crud-example.igordrangel.com.br"
             type="Projeto"
             summary="Aplicação de exemplo de uma tela de CRUD utilizando Cat UI"
           />
@@ -87,7 +87,7 @@ export default function Projets() {
             title="Desafio 02 React | Rocketseat"
             img={rocketseatReactChallenge2}
             github="https://github.com/igordrangel/desafio-02-react-rocketseat"
-            link="https://www.npmjs.com/package/@koalarx/utils"
+            link="https://desafio-02-react-rocketseat.vercel.app"
             type="Em Destaque"
             summary="Desafio 02 - Criando SPAs com ReactJS."
           />
@@ -97,7 +97,7 @@ export default function Projets() {
             title="Desafio 01 React | Rocketseat"
             img={rocketseatReactChallenge1}
             github="https://github.com/igordrangel/desafio-01-react-rocketseat"
-            link="https://github.com/igordrangel/desafio-01-react-rocketseat"
+            link="https://desafio-01-react-rocketseat.vercel.app"
             type="Desafio"
             summary="Desafio 01 - Praticando os conceitos do ReactJS."
           />
