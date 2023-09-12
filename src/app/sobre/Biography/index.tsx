@@ -4,12 +4,28 @@ import { NumberLegend } from './NumberLegend'
 
 export function Biography() {
   return (
-    <div className="grid w-full grid-cols-8 gap-16">
+    <div className="relative m-auto w-[75%] grid grid-cols-8 gap-16">
       <div className="col-span-3 flex flex-col items-start justify-start">
         <h2 className="mb-4 text-lg font-bold uppercase text-black/75">
           Biografia
         </h2>
-        <p className="font-medium">Descrição sobre mim</p>
+        <p className="font-medium">
+          Desde criança sempre fui curioso e com muita vontade de entender como
+          as coisas funcionam, devido a isso, sempre busco conhecimento, não
+          gosto de me acomodar em algo por muito tempo, busco sempre o novo e a
+          inovação.
+        </p>
+        <p className="mt-5 font-medium">
+          Sou Desenvolvedor WEB desde 2014 e nesses anos que se passaram adquiri
+          muita experiência em Gestão e Planejamento de Projetos utilizando
+          metodologias ágeis.
+        </p>
+        <p className="mt-5 font-medium">
+          Atualmente sou um dev fullstack focado em javascript, onde consigo
+          entregar uma aplicação de ponta a ponta, desde provisionamento em
+          servidor, CI/CD, API, Testes e UI/UX. Minha especialidade aplicações
+          utilizando Angular.
+        </p>
       </div>
 
       <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-black bg-gray-200 p-8">

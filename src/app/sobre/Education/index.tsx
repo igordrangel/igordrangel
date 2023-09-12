@@ -49,25 +49,31 @@ export function Education() {
           className="absolute left-9 top-0 w-[4px] h-full bg-black origin-top"
         ></motion.div>
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 mb-32">
           <li>
             <Details
               type="Curso de PHP"
               time="2018"
               place="UpInside Treinamentos"
-              info="Desenvolvimento de aplicações WEB com PHP 7"
+              info="Desenvolvimento de aplicações WEB com PHP 7."
             />
             <Details
               type="Curso de Angular"
               time="2020"
               place="Alura"
-              info="Desenvolvimento de aplicações WEB com Angular 6"
+              info="Desenvolvimento de aplicações WEB com Angular 6."
             />
             <Details
               type="Curso Rest API Node.js"
               time="2020"
               place="Alura"
-              info="Curso para desenvolvimento de APIs Node.js utilizando Express e Mysql"
+              info="Desenvolvimento de APIs Node.js utilizando Express e Mysql."
+            />
+            <Details
+              type="Curso Rest API Node.js"
+              time="2023"
+              place="Ignite"
+              info="Desenvolvimento de APIs Node.js utilizando Fastify, Prisma, Nest.js, conceitos de DDD, SOLID, TDD, Testes Unitários e E2E."
             />
           </li>
         </ul>
