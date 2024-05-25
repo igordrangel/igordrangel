@@ -1,6 +1,6 @@
 {
   "name": "igordrangel",
-  "version": "0.0.0",
+  "version": "3.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-eslint/schematics": "^1.2.0",
     "@angular/animations": "^18.0.0",
     "@angular/common": "^18.0.0",
     "@angular/compiler": "^18.0.0",

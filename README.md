@@ -1,27 +1,24 @@
-# Igordrangel
+### Olá, me chamo Igor, seja Bem-Vindo! 👋
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+Eu sou Desenvolvedor Fullstack, porém, tenho me especializado mais em Frontend atualmente. Sempre fui curioso, ligado as
+novidades, gosto muito de novos desafios e de criar soluções alternativas em caso de não encontrada uma solução pronta
+no mercado.
 
-## Development server
+## ⚡ Tecnologias que Trabalho
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
+![TypeScript](https://img.shields.io/badge/-TypeScript-f1f1f1?style=flat-square&logo=typescript)
+![Angular](https://img.shields.io/badge/-Angular-E34F26?style=flat-square&logo=angular)
+![Nodejs](https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js)
+![Nestjs](https://img.shields.io/badge/-Nestjs-black?style=flat-square&logo=Nestjs)
+![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat-square&logo=mysql)
+![Postgrees](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white&style=flat-square)
+![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
 
-## Code scaffolding
+![Github Stats](https://github-readme-stats.vercel.app/api?username=igordrangel&count_private=true&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=igordrangel&hide=TeX&layout=compact&theme=radical)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=igordrangel)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
