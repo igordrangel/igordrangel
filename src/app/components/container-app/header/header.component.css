@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 3rem;
+  font-size: 1.4rem;
+  box-shadow: 1px 4px 1px rgba(0,0,0,1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a,
+.outside-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  text-decoration: none;
+  color: var(--gray-900);
+  padding: 0 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  transition: .2s;
+}
+
+nav a:hover,
+.outside-link:hover {
+  font-weight: bold;
+}
+
+nav a.active {
+  font-weight: bolder;
+}
+
+.outside-link {
+  position: relative;
+}
+
+.outside-link i {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 1rem;
+}
