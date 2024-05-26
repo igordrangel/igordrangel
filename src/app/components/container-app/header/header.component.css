@@ -1,10 +1,22 @@
 header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 2rem 3rem;
+  box-shadow: 0 6px 0 rgba(0,0,0,1);
+  margin-bottom: 0.5rem;
+  z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   font-size: 1.4rem;
-  box-shadow: 1px 4px 1px rgba(0,0,0,1);
+  max-width: 1280px;
 }
 
 nav {
@@ -26,6 +38,7 @@ nav a,
   letter-spacing: 0.1rem;
   font-weight: 300;
   transition: .2s;
+  text-transform: uppercase;
 }
 
 nav a:hover,
@@ -39,6 +52,7 @@ nav a.active {
 
 .outside-link {
   position: relative;
+  height: 2rem;
 }
 
 .outside-link i {
@@ -46,4 +60,25 @@ nav a.active {
   top: 0;
   right: 0.5rem;
   font-size: 1rem;
+}
+
+@media (max-width: 1080px) {
+  header{
+    flex-direction: row-reverse;
+  }
+
+  .outside-link {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  header{
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .outside-link {
+    display: none;
+  }
 }

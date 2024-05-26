@@ -3,6 +3,7 @@ import { ContainerAppComponent } from "../../components/container-app/container-
 
 @Component({
   standalone: true,
+  selector: 'app-projects-page',
   templateUrl: './projects.page.component.html',
   imports: [ContainerAppComponent]
 })
