@@ -1,8 +1,10 @@
 ### Olá, me chamo Igor, seja Bem-Vindo! 👋
 
-Eu sou Desenvolvedor Fullstack, porém, tenho me especializado mais em Frontend atualmente. Sempre fui curioso, ligado as
-novidades, gosto muito de novos desafios e de criar soluções alternativas em caso de não encontrada uma solução pronta
-no mercado.
+Desde criança sempre fui curioso e com muita vontade de entender como as coisas funcionam, devido a isso, sempre busco conhecimento, não gosto de me acomodar em algo por muito tempo, busco sempre o novo e a inovação.
+
+Sou Desenvolvedor WEB desde 2014 e nesses anos que se passaram adquiri muita experiência em Gestão e Planejamento de Projetos utilizando metodologias ágeis.
+
+Atualmente sou um dev fullstack focado em javascript, onde consigo entregar uma aplicação de ponta a ponta, desde provisionamento em servidor, CI/CD, API, Testes e UI/UX. Minha especialidade são aplicações utilizando Angular.
 
 ## ⚡ Tecnologias que Trabalho
 
@@ -17,8 +19,5 @@ no mercado.
 ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
 
-![Github Stats](https://github-readme-stats.vercel.app/api?username=igordrangel&count_private=true&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=igordrangel&hide=TeX&layout=compact&theme=radical)
-
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=igordrangel)
 

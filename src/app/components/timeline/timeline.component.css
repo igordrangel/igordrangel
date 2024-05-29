@@ -1,0 +1,7 @@
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}

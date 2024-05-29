@@ -18,7 +18,7 @@
 
   </app-container-intro>
 
-  <app-section-container>
+  <app-section-container id="skills">
 
     <ng-container title>Skills</ng-container>
 
@@ -38,6 +38,42 @@
         <app-icon icon="puppeteer">Puppeteer</app-icon>
         <app-icon icon="azureFunctions">Azure Functions</app-icon>
       </app-flexbox-wrap>
+    </ng-container>
+
+  </app-section-container>
+
+  <app-section-container id="projetos">
+
+    <ng-container title>Projetos</ng-container>
+
+    <ng-container content>
+      <app-timeline>
+
+        @for (item of projects; track $index) {
+          <app-card [thumbnail]="item.thumbnail">
+            <ng-container title>
+              {{item.title}}
+            </ng-container>
+
+            <ng-container description>
+              {{item.description}}
+            </ng-container>
+
+            <ng-container actions>
+              @for (action of item.actions; track $index) {
+                <a appButton
+                  [color]="action.raisedButton ? 'primary' : 'icon-only'"
+                  [href]="action.link"
+                  target="_blank">
+                  <i [class]="action.icon"></i>
+                  {{action.label}}
+                </a>
+              }
+            </ng-container>
+          </app-card>
+        }
+
+      </app-timeline>
     </ng-container>
 
   </app-section-container>

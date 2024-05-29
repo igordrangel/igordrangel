@@ -1,0 +1,4 @@
+.timeline-container > * {
+  display: flex;
+  width: calc((100% - 2rem)/2);
+}

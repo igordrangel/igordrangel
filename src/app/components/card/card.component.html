@@ -1,0 +1,17 @@
+<div class="card-container">
+  <div class="card-content">
+    <img [src]="thumbnail()" />
+
+    <h2 class="card-title">
+      <ng-content select="[title]" />
+    </h2>
+
+    <div class="card-description">
+      <ng-content select="[description]" />
+    </div>
+  </div>
+
+  <div class="card-actions">
+    <ng-content select="[actions]" />
+  </div>
+</div>
