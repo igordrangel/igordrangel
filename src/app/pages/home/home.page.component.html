@@ -49,7 +49,7 @@
     <ng-container content>
       <app-timeline>
 
-        @for (item of projects; track $index) {
+        @for (item of projects | async; track $index) {
           <app-card [thumbnail]="item.thumbnail">
             <ng-container title>
               {{item.title}}
@@ -74,6 +74,34 @@
         }
 
       </app-timeline>
+    </ng-container>
+
+  </app-section-container>
+
+  <app-section-container id="expirience">
+
+    <ng-container title>Experiência</ng-container>
+
+    <ng-container content>
+      <app-datalist>
+
+        @for (item of expirience | async; track $index) {
+          <app-post>
+            <ng-container title>
+              {{item.title}}
+            </ng-container>
+
+            <ng-container subtitle>
+              {{item.subtitle}}
+            </ng-container>
+
+            <ng-container description>
+              {{item.description}}
+            </ng-container>
+          </app-post>
+        }
+
+      </app-datalist>
     </ng-container>
 
   </app-section-container>

@@ -1,0 +1,17 @@
+<div class="post-container">
+  <div class="post-radio"></div>
+
+  <div class="post-content">
+    <h2 class="post-title">
+      <ng-content select="[title]" />
+    </h2>
+
+    <small class="post-subtitle">
+      <ng-content select="[subtitle]" />
+    </small>
+
+    <p class="post-description">
+      <ng-content select="[description]" />
+    </p>
+  </div>
+</div>

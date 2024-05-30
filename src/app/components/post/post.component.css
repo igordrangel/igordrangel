@@ -1,0 +1,38 @@
+.post-container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.post-container .post-radio {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: 0.4rem solid var(--gray-1000);
+  background-color: var(--white);
+  padding: 0.4rem;
+}
+
+.post-container .post-radio::before {
+  content: ' ';
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--gray-1000);
+  background-color: var(--blue-400);
+}
+
+.post-title {
+  font-size: 3rem;
+}
+
+.post-subtitle {
+  font-size: 1.2rem;
+  color: var(--gray-600);
+}
+
+.post-description {
+  padding: 1rem 0 0;
+  font-size: 1.4rem;
+  text-align: justify;
+}
