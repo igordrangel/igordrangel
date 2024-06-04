@@ -3,7 +3,7 @@
   <app-container-intro>
 
     <ng-container left-side>
-      <img src="avatar/me.png" />
+      <img src="avatar/me.png" alt="Minha foto de perfil gerada através de IA" />
     </ng-container>
 
     <ng-container right-side>
@@ -50,7 +50,7 @@
       <app-timeline>
 
         @for (item of projects | async; track $index) {
-          <app-card [thumbnail]="item.thumbnail">
+          <app-card [thumbnail]="item.thumbnail" [alt]="item.description">
             <ng-container title>
               {{item.title}}
             </ng-container>
@@ -64,6 +64,7 @@
                 <a appButton
                   [color]="action.raisedButton ? 'primary' : 'icon-only'"
                   [href]="action.link"
+                  [attr.aria-label]="action.alt"
                   target="_blank">
                   <i [class]="action.icon"></i>
                   {{action.label}}

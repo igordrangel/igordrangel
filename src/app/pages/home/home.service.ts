@@ -13,12 +13,14 @@ export class HomeService {
           {
             icon: 'fa-solid fa-arrow-up-right-from-square',
             label: 'Site',
+            alt: 'Link para meu portifólio',
             link: 'https://igordrangel.com.br',
             raisedButton: true
           },
           {
             icon: 'fa-brands fa-github',
             link: 'https://github.com/igordrangel/igordrangel',
+            alt: 'Link para o Github do meu portifólio',
             raisedButton: false
           }
         ]
@@ -31,12 +33,14 @@ export class HomeService {
           {
             icon: 'fa-solid fa-arrow-up-right-from-square',
             label: 'Documentação',
+            alt: 'Link para a Documentação do CatUI',
             link: 'https://doc.catui.igordrangel.com.br',
             raisedButton: true
           },
           {
             icon: 'fa-brands fa-github',
             link: 'https://github.com/igordrangel/cat-ui',
+            alt: 'Link para o GitHub do CatUI',
             raisedButton: false
           }
         ]
@@ -50,11 +54,13 @@ export class HomeService {
             icon: 'fa-solid fa-arrow-up-right-from-square',
             label: 'Demonstração',
             link: 'https://poc-messenger-manager.igordrangel.com.br/',
+            alt: 'Link para a demonstração do Messenger Manager',
             raisedButton: true
           },
           {
             icon: 'fa-brands fa-github',
             link: 'https://github.com/igordrangel/poc-app-mensageria-ui',
+            alt: 'Link para o GitHub do Messenger Manager',
             raisedButton: false
           }
         ]
@@ -67,11 +73,13 @@ export class HomeService {
           {
             icon: 'fa-brands fa-npm',
             link: 'https://www.npmjs.com/package/@koalarx/utils',
+            alt: 'Link para o NPM da biblioteca @koalarx/utils',
             raisedButton: false
           },
           {
             icon: 'fa-brands fa-github',
             link: 'https://github.com/igordrangel/koala-utils',
+            alt: 'Link para o GitHub da biblioteca @koalarx/utils',
             raisedButton: false
           }
         ]
