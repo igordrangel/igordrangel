@@ -1,5 +1,6 @@
 @import url(theme/variables.css);
 @import url(theme/timeline.css);
+@import url(theme/post.css);
 @import url(theme/button.css);
 
 * {
