@@ -7,3 +7,16 @@
   margin: 0 auto;
   max-width: 1280px;
 }
+
+.intro-container .intro-left-content,
+.intro-container .intro-right-content {
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .intro-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 500px;
+  }
+}

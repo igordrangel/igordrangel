@@ -19,7 +19,7 @@ header {
   max-width: 1280px;
 }
 
-nav {
+.header-content nav {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -72,10 +72,14 @@ nav a.active {
   }
 }
 
-@media (max-width: 500px) {
-  header{
+@media (max-width: 950px) {
+  .header-content {
     flex-direction: column-reverse;
     gap: 2rem;
+  }
+
+  .header-content nav {
+    gap: 0.5rem;
   }
 
   .outside-link {

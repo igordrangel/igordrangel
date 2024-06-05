@@ -17,6 +17,7 @@ import { AsyncPipe } from "@angular/common";
 @Component({
   standalone: true,
   selector: 'app-home-page',
+  styleUrl: './home.page.component.css',
   templateUrl: './home.page.component.html',
   providers: [HomeService],
   imports: [

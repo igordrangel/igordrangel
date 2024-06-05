@@ -1,0 +1,11 @@
+img#profile-img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  img#profile-img {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

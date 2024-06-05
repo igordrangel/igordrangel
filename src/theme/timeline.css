@@ -2,3 +2,9 @@
   display: flex;
   width: calc((100% - 2rem)/2);
 }
+
+@media (max-width: 950px) {
+  .timeline-container > * {
+    width: 100%;
+  }
+}
