@@ -14,6 +14,7 @@ type IconType =
   | 'postgresql'
   | 'puppeteer'
   | 'azureFunctions'
+  | 'tailwind'
 
 @Component({
   standalone: true,

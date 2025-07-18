@@ -7,7 +7,7 @@ export class HomeService {
     return of([
       {
         thumbnail: 'wallpapers/portifolio.jpg',
-        title: 'Portifólio' ,
+        title: 'Portifólio',
         description: 'Landing Page aprensentando minhas skills e projetos',
         actions: [
           {
@@ -15,76 +15,78 @@ export class HomeService {
             label: 'Site',
             alt: 'Link para meu portifólio',
             link: 'https://igordrangel.com.br',
-            raisedButton: true
+            raisedButton: true,
           },
           {
             icon: 'fa-brands fa-github',
             link: 'https://github.com/igordrangel/igordrangel',
             alt: 'Link para o Github do meu portifólio',
-            raisedButton: false
-          }
-        ]
+            raisedButton: false,
+          },
+        ],
       },
       {
-        thumbnail: 'wallpapers/cat-ui.jpg',
-        title: 'CatUI' ,
-        description: 'Cat UI é um Design System para projetos Angular, onde seu maior objetivo é abstrair ao máximo a criação de sistemas, permitindo mais produtividade.',
+        thumbnail: 'wallpapers/koala-ui.jpg',
+        title: 'KoalaUI',
+        description:
+          'Koala UI é uma biblioteca de componentes moderna e acessível projetada para acelerar o desenvolvimento de interfaces em projetos Angular. Com integração simples e documentação clara, você pode facilmente construir aplicações robustas e visualmente atraentes.',
         actions: [
           {
             icon: 'fa-solid fa-arrow-up-right-from-square',
             label: 'Documentação',
-            alt: 'Link para a Documentação do CatUI',
-            link: 'https://doc.catui.igordrangel.com.br',
-            raisedButton: true
+            alt: 'Link para a Documentação do KoalaUI',
+            link: 'https://koalaui.igordrangel.com.br',
+            raisedButton: true,
           },
           {
             icon: 'fa-brands fa-github',
-            link: 'https://github.com/igordrangel/cat-ui',
-            alt: 'Link para o GitHub do CatUI',
-            raisedButton: false
-          }
-        ]
-      },
-      {
-        thumbnail: 'wallpapers/cat-ui-poc-messenger-manager.jpg',
-        title: 'Messenger Manager' ,
-        description: 'Uma POC de uma aplicação de administração de processos de mensageria utilizando Angular e CatUI',
-        actions: [
-          {
-            icon: 'fa-solid fa-arrow-up-right-from-square',
-            label: 'Demonstração',
-            link: 'https://poc-messenger-manager.igordrangel.com.br/',
-            alt: 'Link para a demonstração do Messenger Manager',
-            raisedButton: true
+            link: 'https://github.com/igordrangel/koala-ui',
+            alt: 'Link para o GitHub do KoalaUI',
+            raisedButton: false,
           },
-          {
-            icon: 'fa-brands fa-github',
-            link: 'https://github.com/igordrangel/poc-app-mensageria-ui',
-            alt: 'Link para o GitHub do Messenger Manager',
-            raisedButton: false
-          }
-        ]
+        ],
       },
       {
         thumbnail: 'wallpapers/koala-utils.jpg',
-        title: 'Koala Utils' ,
-        description: 'Uma biblioteca para manimulação, transformação e requisição de dados.',
+        title: 'Koala Utils',
+        description:
+          'Uma biblioteca para manimulação, transformação e requisição de dados.',
         actions: [
           {
             icon: 'fa-brands fa-npm',
             link: 'https://www.npmjs.com/package/@koalarx/utils',
             alt: 'Link para o NPM da biblioteca @koalarx/utils',
-            raisedButton: false
+            raisedButton: false,
           },
           {
             icon: 'fa-brands fa-github',
             link: 'https://github.com/igordrangel/koala-utils',
             alt: 'Link para o GitHub da biblioteca @koalarx/utils',
-            raisedButton: false
-          }
-        ]
-      }
-    ])
+            raisedButton: false,
+          },
+        ],
+      },
+      {
+        thumbnail: 'wallpapers/koala-nest.jpg',
+        title: 'Koala Nest',
+        description:
+          'Uma biblioteca para aplicações NestJS utilizando o padrão DDD.',
+        actions: [
+          {
+            icon: 'fa-brands fa-npm',
+            link: 'https://www.npmjs.com/package/@koalarx/nest',
+            alt: 'Link para o NPM da biblioteca @koalarx/nest',
+            raisedButton: false,
+          },
+          {
+            icon: 'fa-brands fa-github',
+            link: 'https://github.com/igordrangel/koala-nest',
+            alt: 'Link para o GitHub da biblioteca @koalarx/nest',
+            raisedButton: false,
+          },
+        ],
+      },
+    ]);
   }
 
   expirience() {
