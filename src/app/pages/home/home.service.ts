@@ -35,7 +35,7 @@ export class HomeService {
             icon: 'fa-solid fa-arrow-up-right-from-square',
             label: 'Documentação',
             alt: 'Link para a Documentação do KoalaUI',
-            link: 'https://koalaui.igordrangel.com.br',
+            link: 'https://ui.koalarx.com',
             raisedButton: true,
           },
           {
