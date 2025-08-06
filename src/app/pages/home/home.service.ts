@@ -27,14 +27,14 @@ export class HomeService {
       },
       {
         thumbnail: 'wallpapers/koala-ui.jpg',
-        title: 'KoalaUI',
+        title: 'koalarx/ui',
         description:
-          'Koala UI é uma biblioteca de componentes moderna e acessível projetada para acelerar o desenvolvimento de interfaces em projetos Angular. Com integração simples e documentação clara, você pode facilmente construir aplicações robustas e visualmente atraentes.',
+          'Uma biblioteca de componentes moderna e acessível projetada para acelerar o desenvolvimento de interfaces em projetos Angular. Com integração simples e documentação clara, você pode facilmente construir aplicações robustas e visualmente atraentes.',
         actions: [
           {
             icon: 'fa-solid fa-arrow-up-right-from-square',
             label: 'Documentação',
-            alt: 'Link para a Documentação do KoalaUI',
+            alt: 'Link para a Documentação do koalarx/ui',
             link: 'https://ui.koalarx.com',
             raisedButton: true,
           },
@@ -48,7 +48,7 @@ export class HomeService {
       },
       {
         thumbnail: 'wallpapers/koala-utils.jpg',
-        title: 'Koala Utils',
+        title: 'koalarx/utils',
         description:
           'Uma biblioteca para manimulação, transformação e requisição de dados.',
         actions: [
@@ -68,7 +68,7 @@ export class HomeService {
       },
       {
         thumbnail: 'wallpapers/koala-nest.jpg',
-        title: 'Koala Nest',
+        title: 'koalarx/nest',
         description:
           'Uma biblioteca para aplicações NestJS utilizando o padrão DDD.',
         actions: [
