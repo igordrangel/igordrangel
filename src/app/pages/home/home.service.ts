@@ -29,7 +29,7 @@ export class HomeService {
         thumbnail: 'wallpapers/koala-ui.jpg',
         title: 'koalarx/ui',
         description:
-          'Uma biblioteca de componentes moderna e acessível projetada para acelerar o desenvolvimento de interfaces em projetos Angular. Com integração simples e documentação clara, você pode facilmente construir aplicações robustas e visualmente atraentes.',
+          'Fortemente inspirado no shadcn/ui, uma biblioteca de componentes para Angular, utilizando as melhores práticas e tecnologias do mercado.',
         actions: [
           {
             icon: 'fa-solid fa-arrow-up-right-from-square',
@@ -73,10 +73,11 @@ export class HomeService {
           'Uma biblioteca para aplicações NestJS utilizando o padrão DDD.',
         actions: [
           {
-            icon: 'fa-brands fa-npm',
-            link: 'https://www.npmjs.com/package/@koalarx/nest',
-            alt: 'Link para o NPM da biblioteca @koalarx/nest',
-            raisedButton: false,
+            icon: 'fa-solid fa-arrow-up-right-from-square',
+            label: 'Documentação',
+            alt: 'Link para a Documentação do koalarx/nest',
+            link: 'https://nest.koalarx.com',
+            raisedButton: true,
           },
           {
             icon: 'fa-brands fa-github',
@@ -94,48 +95,62 @@ export class HomeService {
       {
         title: 'Auxiliar Administrativo',
         subtitle: '2016-2017 | Campos Dos Goytacazes/RJ, BR',
-        description: 'Suporte ao Cliente e Controle e registro dos dados dos clientes em planilha excel',
+        description:
+          'Suporte ao Cliente e Controle e registro dos dados dos clientes em planilha excel',
         link: {
           label: '@Cia do Crédito',
-          url: 'https://www.linkedin.com/company/ciadocredito?originalSubdomain=br'
-        }
+          url: 'https://www.linkedin.com/company/ciadocredito?originalSubdomain=br',
+        },
       },
       {
-        title: 'Desenvolvedor WEB Júnior',
+        title: 'Desenvolvedor I',
         subtitle: '2017-2018 | Campos Dos Goytacazes/RJ, BR',
         description: 'Desenvolvimento de aplicações internas da empresa',
         link: {
           label: '@Cia do Crédito',
-          url: 'https://www.linkedin.com/company/ciadocredito?originalSubdomain=br'
-        }
+          url: 'https://www.linkedin.com/company/ciadocredito?originalSubdomain=br',
+        },
       },
       {
-        title: 'Desenvolvedor WEB Pleno',
+        title: 'Desenvolvedor II',
         subtitle: '2018-2019 | Campos Dos Goytacazes/RJ, BR',
-        description: 'Desenvolvimento de aplicações internas e externas da empresa',
+        description:
+          'Desenvolvimento de aplicações internas e externas da empresa',
         link: {
           label: '@Cia do Crédito',
-          url: 'https://www.linkedin.com/company/ciadocredito?originalSubdomain=br'
-        }
+          url: 'https://www.linkedin.com/company/ciadocredito?originalSubdomain=br',
+        },
       },
       {
-        title: 'Desenvolvedor WEB Sênior/TL',
+        title: 'Desenvolvedor III/Tech Lead',
         subtitle: '2018-2020 | Campos Dos Goytacazes/RJ, BR',
-        description: 'Desenvolvimento de aplicações internas e externas da empresa, aplicações de mensageria, webscrapping e liderança da equipe de desenvolvimento da empresa.',
+        description:
+          'Desenvolvimento de aplicações internas e externas da empresa, aplicações de mensageria, webscrapping e liderança da equipe de desenvolvimento da empresa.',
         link: {
           label: '@Cia do Crédito',
-          url: 'https://www.linkedin.com/company/ciadocredito?originalSubdomain=br'
-        }
+          url: 'https://www.linkedin.com/company/ciadocredito?originalSubdomain=br',
+        },
       },
       {
-        title: 'Desenvolvedor WEB Sênior',
-        subtitle: '2020-Atual | Rio De Janeiro, BR',
-        description: 'Desenvolvimento de aplicações internas da Rede Globo(Cliente) e aplicações de mensageria.',
+        title: 'Desenvolvedor II',
+        subtitle: '2020-2022 | Rio De Janeiro, BR',
+        description:
+          'Desenvolvimento de aplicações internas da Rede Globo(Cliente) e aplicações de mensageria.',
         link: {
           label: '@Meta',
-          url: 'https://www.linkedin.com/company/metaoficial/mycompany/verification'
-        }
-      }
-    ])
+          url: 'https://www.linkedin.com/company/metaoficial/mycompany/verification',
+        },
+      },
+      {
+        title: 'Desenvolvedor III',
+        subtitle: '2022-Atual | Rio De Janeiro, BR',
+        description:
+          'Desenvolvimento de aplicações internas da Rede Globo(Cliente) e aplicações de mensageria.',
+        link: {
+          label: '@Meta',
+          url: 'https://www.linkedin.com/company/metaoficial/mycompany/verification',
+        },
+      },
+    ]);
   }
 }

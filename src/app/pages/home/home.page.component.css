@@ -9,3 +9,8 @@ img#profile-img {
     width: 80%;
   }
 }
+
+app-post a {
+  color: var(--blue-600);
+  font-weight: bold;
+}
