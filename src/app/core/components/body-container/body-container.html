@@ -1,0 +1,17 @@
+<main class="flex flex-col max-w-100% lg:max-w-260 mx-auto">
+  @if (showScrollToTop()) {
+    <button
+      class="fixed right-10 bottom-10 z-10"
+      appButton
+      btnCircle
+      btnSoft
+      btnVariant="primary"
+      type="button"
+      (click)="scrollToTop()"
+    >
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+  }
+
+  <ng-content />
+</main>

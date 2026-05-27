@@ -1,0 +1,12 @@
+@theme {
+  --animate-bg-pan-top: bg-pan-top 5s infinite alternate both;
+
+  @keyframes bg-pan-top {
+    0% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
+}

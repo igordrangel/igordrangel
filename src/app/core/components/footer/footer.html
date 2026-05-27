@@ -1,0 +1,73 @@
+<footer
+  class="mt-25 rounded-t-2xl border border-b-0 border-base-300 bg-base-100/80 backdrop-blur-sm"
+>
+  <div class="grid grid-cols-1 gap-6 p-6 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <h4 class="mb-2 text-sm font-semibold opacity-90">Igor D. Rangel</h4>
+      <p class="text-sm opacity-70">
+        Sou um <strong class="text-neutral-200">Desenvolvedor Full-Stack</strong>, e sou dedicado a
+        transformar ideias em aplicações web inovadoras. Fique a vontade para explorar meus
+        projetos, onde minha especialidade está em desenvolvimento
+        <strong class="text-neutral-200">Angular</strong> e
+        <strong class="text-neutral-200">Node.js</strong> para
+        <strong class="text-neutral-200">aplicações WEB</strong>.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="mb-2 text-sm font-semibold opacity-90">Principais Projetos</h4>
+      <ul class="space-y-1 text-sm opacity-80">
+        @for (item of db.mainProjects; track $index) {
+          <li>
+            <a
+              [attr.href]="item.docUrl || item.npmUrl || item.githubUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm opacity-80 transition-opacity hover:opacity-100"
+            >
+              {{ item.label }}
+              <i class="fa-solid fa-arrow-up-long rotate-45 text-[0.6rem]"></i>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="mb-2 text-sm font-semibold opacity-90">Redes Sociais</h4>
+      <ul class="space-y-1 text-sm opacity-80 font-mono">
+        @for (item of db.socialMedias; track $index) {
+          <li>
+            <a
+              [attr.href]="item.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm opacity-80 transition-opacity hover:opacity-100"
+            >
+              {{ item.label }}
+              <i class="fa-solid fa-arrow-up-long rotate-45 text-[0.6rem]"></i>
+            </a>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="flex flex-col gap-2 border-t border-base-300 px-6 py-3 text-xs opacity-60 md:flex-row md:items-center md:justify-between"
+  >
+    <span>© 2026 Igor D. Rangel</span>
+    <span>
+      Built with Angular and
+      <a
+        class="underline font-bold"
+        href="https://ui.koalarx.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @koalarx/ui
+      </a>
+      .
+    </span>
+  </div>
+</footer>

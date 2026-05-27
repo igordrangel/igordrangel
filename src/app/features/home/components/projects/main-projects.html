@@ -1,0 +1,56 @@
+<article class="flex flex-col items-center gap-16">
+  <h2 class="text-3xl font-bold px-4 pb-1 border-b-4 border-neutral-200">Projetos</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    @for (project of db.mainProjects; track $index) {
+      <app-card
+        [thumbnail]="project.thumbnail"
+        [label]="project.label"
+        [description]="project.description"
+      >
+        <ng-container actions>
+          @if (project.docUrl) {
+            <a
+              appButton
+              btnVariant="ghost"
+              btnSize="sm"
+              class="bg-neutral-300 text-neutral-900"
+              [attr.href]="project.docUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Documentação
+            </a>
+          }
+
+          @if (project.githubUrl) {
+            <a
+              appButton
+              btnVariant="ghost"
+              btnSize="lg"
+              btnCircle
+              [attr.href]="project.githubUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github text-2xl"></i>
+            </a>
+          }
+
+          @if (project.npmUrl) {
+            <a
+              appButton
+              btnVariant="ghost"
+              btnSize="lg"
+              btnCircle
+              [attr.href]="project.npmUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-npm text-2xl"></i>
+            </a>
+          }
+        </ng-container>
+      </app-card>
+    }
+  </div>
+</article>

@@ -1,0 +1,17 @@
+<header
+  class="mb-8 rounded-b-2xl border border-t-0 border-base-300 bg-base-100/80 backdrop-blur-sm"
+>
+  <nav class="flex items-center justify-center py-4 gap-2">
+    @for (link of links; track $index) {
+      <a
+        appButton
+        btnVariant="ghost"
+        btnSize="sm"
+        routerLinkActive="bg-neutral-300 text-neutral-900"
+        [routerLink]="link.path"
+      >
+        {{ link.label }}
+      </a>
+    }
+  </nav>
+</header>

@@ -1,11 +1,12 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { BodyContainer } from './core/components/body-container';
+import { Footer } from './core/components/footer';
+import { Navbar } from './core/components/nav-bar';
+import { RouterContentContainer } from './core/components/router-content-container';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
+  imports: [BodyContainer, Navbar, RouterContentContainer, Footer],
 })
-export class App {
-  protected readonly title = signal('igordrangel');
-}
+export class App {}

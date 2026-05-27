@@ -1,0 +1,26 @@
+<div class="card border border-base-300 bg-base-100/80 backdrop-blur-sm">
+  <figure class="relative w-full h-72">
+    @if (thumbnailIsLoading()) {
+      <app-skeleton variant="rect" class="w-full h-full absolute inset-0" />
+    }
+
+    <img
+      class="relative transition-opacity duration-300"
+      [class.opacity-0]="thumbnailIsLoading()"
+      [ngSrc]="thumbnail()"
+      [attr.alt]="label()"
+      width="1024"
+      height="768"
+      (load)="thumbnailIsLoading.set(false)"
+    />
+  </figure>
+
+  <div class="card-body">
+    <h2 class="card-title">{{ label() }}</h2>
+    <p>{{ description() }}</p>
+
+    <div class="card-actions items-center justify-end empty:hidden">
+      <ng-content select="[actions]" />
+    </div>
+  </div>
+</div>

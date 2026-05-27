@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
+@import './theme/animations.css';
 @import './theme/icons.css';
 @import './theme/grid.css';
 
@@ -70,13 +71,7 @@
   --noise: 0;
 }
 
-[data-theme='koala'] *:disabled {
-  opacity: 80%;
-}
-
 :root {
-  scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
-  timeline-scope: --check-table-scroll;
 }
