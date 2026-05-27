@@ -1,0 +1,53 @@
+{
+  "name": "igordrangel",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "vitest run && playwright test",
+    "prestart": "node generate-icons.js",
+    "prebuild": "node generate-icons.js",
+    "build:dev": "node generate-icons.js && ng build --configuration development",
+    "build:prod": "node generate-icons.js && ng build --configuration production",
+    "e2e": "playwright test",
+    "e2e:headed": "playwright test --headed",
+    "e2e:ui": "playwright test --ui",
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest"
+  },
+  "private": true,
+  "packageManager": "bun@1.3.6",
+  "dependencies": {
+    "@angular/common": "^21.2.0",
+    "@angular/compiler": "^21.2.0",
+    "@angular/core": "^21.2.0",
+    "@angular/forms": "^21.2.0",
+    "@angular/platform-browser": "^21.2.0",
+    "@angular/router": "^21.2.0",
+    "@koalarx/utils": "^4.2.3",
+    "clsx": "^2.1.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.2.12",
+    "@angular/cli": "^21.2.12",
+    "@angular/compiler-cli": "^21.2.0",
+    "@playwright/test": "^1.60.0",
+    "@tailwindcss/postcss": "^4.1.12",
+    "@types/node": "^25.9.1",
+    "@vitest/eslint-plugin": "^1.6.18",
+    "angular-eslint": "^21.4.0",
+    "daisyui": "^5.5.20",
+    "eslint-plugin-prettier": "^5.5.5",
+    "jsdom": "^28.0.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^4.1.12",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.60.0",
+    "vitest": "^4.0.8"
+  }
+}
