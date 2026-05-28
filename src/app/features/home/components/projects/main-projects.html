@@ -1,17 +1,1 @@
-<article class="flex flex-col items-center gap-16 pb-25">
-  <h2
-    appReveal
-    class="motion-reveal-scroll motion-delay-1 text-3xl font-bold px-4 pb-1 border-b-4 border-neutral-200 text-base-content"
-  >
-    Projetos
-  </h2>
-
-  <div
-    appReveal
-    class="motion-reveal-scroll motion-delay-2 grid w-full grid-cols-1 gap-4 px-4 md:grid-cols-2"
-  >
-    @for (project of db.mainProjects; track project.label) {
-      <app-project-card [project]="project" />
-    }
-  </div>
-</article>
+<app-projects-showcase title="Projetos" [projects]="mainProjects" />

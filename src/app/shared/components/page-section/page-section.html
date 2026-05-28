@@ -1,0 +1,7 @@
+<article [class]="articleClass()">
+  @if (title()) {
+    <app-section-header [title]="title()!" [description]="description()" />
+  }
+
+  <ng-content />
+</article>

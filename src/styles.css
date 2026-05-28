@@ -64,7 +64,119 @@
       transform: scale(1.15);
     }
   }
+
+  --animate-career-line-grow: career-line-grow 3s ease-in-out infinite;
+  --animate-career-step-pulse: career-step-pulse 2.5s ease-in-out infinite;
+  --animate-career-arrow-rise: career-arrow-rise 2.5s ease-in-out infinite;
+
+  @keyframes career-line-grow {
+    0%,
+    100% {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 0;
+      opacity: 0.5;
+    }
+    50% {
+      stroke-dasharray: 60;
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes career-step-pulse {
+    0%,
+    100% {
+      transform: translateY(0);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateY(-4px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes career-arrow-rise {
+    0%,
+    100% {
+      opacity: 0.5;
+      transform: translateY(2px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+  }
+
+  --animate-skills-pulse: skills-pulse 2.5s ease-in-out infinite;
+  --animate-skills-orbit: skills-orbit 3s ease-in-out infinite;
+
+  @keyframes skills-pulse {
+    0%,
+    100% {
+      opacity: 0.7;
+      transform: scale(0.9);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes skills-orbit {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+
+  --animate-skill-glow: skill-glow 4s ease-in-out infinite;
+  --animate-skill-logo-float: skill-logo-float 5s ease-in-out infinite;
+  --animate-skill-ring-spin: skill-ring-spin 14s linear infinite;
+
+  @keyframes skill-glow {
+    0%,
+    100% {
+      opacity: 0.35;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.65;
+      transform: scale(1.08);
+    }
+  }
+
+  @keyframes skill-logo-float {
+    0%,
+    100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-8px) scale(1.03);
+    }
+  }
+
+  @keyframes skill-ring-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes skill-shine-sweep {
+    0% {
+      transform: translateX(-120%) skewX(-12deg);
+    }
+    100% {
+      transform: translateX(220%) skewX(-12deg);
+    }
+  }
 }
+@import './theme/layout.css';
 @import './theme/grid.css';
 
 @custom-variant dark (&:where(.dark, .dark *));

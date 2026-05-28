@@ -12,7 +12,7 @@ export class Reveal implements OnInit, OnDestroy {
     element.classList.add('motion-reveal-scroll');
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      element.classList.add('motion-visible');
+      this.show(element);
       return;
     }
 
@@ -22,16 +22,33 @@ export class Reveal implements OnInit, OnDestroy {
           return;
         }
 
-        element.classList.add('motion-visible');
-        this.observer?.unobserve(element);
+        this.show(element);
       },
-      { threshold: 0.12, rootMargin: '0px 0px -5% 0px' },
+      { threshold: 0, rootMargin: '0px 0px -2% 0px' },
     );
 
     this.observer.observe(element);
+
+    requestAnimationFrame(() => {
+      if (this.isInViewport(element)) {
+        this.show(element);
+      }
+    });
   }
 
   ngOnDestroy() {
     this.observer?.disconnect();
+  }
+
+  private show(element: HTMLElement) {
+    element.classList.add('motion-visible');
+    this.observer?.unobserve(element);
+  }
+
+  private isInViewport(element: HTMLElement): boolean {
+    const rect = element.getBoundingClientRect();
+    const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    return rect.top < viewHeight && rect.bottom > 0;
   }
 }

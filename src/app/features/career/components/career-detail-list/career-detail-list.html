@@ -1,0 +1,10 @@
+@if (items()?.length) {
+  <div class="w-full max-w-2xl text-left">
+    <h4 class="mb-3 text-sm font-semibold text-base-content">{{ heading() }}</h4>
+    <ul class="list-inside list-disc space-y-2 text-sm text-neutral-400 md:text-base">
+      @for (item of items(); track item) {
+        <li>{{ item }}</li>
+      }
+    </ul>
+  </div>
+}

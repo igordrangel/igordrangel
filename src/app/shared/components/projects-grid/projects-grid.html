@@ -1,0 +1,5 @@
+<div appReveal [class]="gridClass()">
+  @for (project of projects(); track project.label) {
+    <app-project-card [project]="project" [compact]="compact()" />
+  }
+</div>

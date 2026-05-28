@@ -91,12 +91,50 @@
   .motion-reveal-scroll.motion-delay-3 {
     transition-delay: 0.2s;
   }
+
+  @keyframes motion-tab-from-right {
+    from {
+      opacity: 0;
+      transform: translate3d(1.5rem, 0, 0);
+      filter: blur(8px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes motion-tab-from-left {
+    from {
+      opacity: 0;
+      transform: translate3d(-1.5rem, 0, 0);
+      filter: blur(8px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      filter: blur(0);
+    }
+  }
+
+  .motion-tab-from-right {
+    animation: motion-tab-from-right 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .motion-tab-from-left {
+    animation: motion-tab-from-left 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .motion-reveal,
   .motion-reveal-scale,
-  .motion-reveal-scroll {
+  .motion-reveal-scroll,
+  .motion-tab-from-right,
+  .motion-tab-from-left {
     opacity: 1;
     transform: none;
     filter: none;

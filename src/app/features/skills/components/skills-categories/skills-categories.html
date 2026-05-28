@@ -1,0 +1,13 @@
+<app-page-section padding="categories" gap="20" [fullWidth]="true">
+  @for (category of skillCategories; track category.label) {
+    <article class="flex w-full max-w-4xl flex-col items-center gap-8 sm:gap-10">
+      <app-section-header [title]="category.label" [description]="category.description" />
+
+      <div appReveal class="motion-delay-3 flex w-full flex-wrap justify-center gap-2 sm:gap-3">
+        @for (skill of category.skills; track skill.label) {
+          <app-tag-chip [label]="skill.label" [details]="skill.details" />
+        }
+      </div>
+    </article>
+  }
+</app-page-section>

@@ -1,0 +1,14 @@
+<app-page-section
+  title="Em Destaque"
+  description="Angular em primeiro lugar — o restante sustenta entregas full-stack e DevOps."
+  padding="compact"
+>
+  <div
+    appReveal
+    class="motion-delay-3 grid w-full max-w-6xl grid-cols-1 gap-4 px-4 sm:gap-6 lg:grid-cols-3"
+  >
+    @for (skill of mainSkills; track skill.label; let i = $index) {
+      <app-skill-card [skill]="skill" [index]="i" />
+    }
+  </div>
+</app-page-section>

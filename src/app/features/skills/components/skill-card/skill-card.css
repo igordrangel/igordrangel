@@ -1,0 +1,22 @@
+.skill-card-shine::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, oklch(100% 0 0 / 0.06) 50%, transparent 60%);
+  animation: skill-shine-sweep 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.skill-card-grid {
+  background-image:
+    linear-gradient(oklch(100% 0 0 / 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(100% 0 0 / 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 20%, transparent 75%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-card-shine::after {
+    animation: none;
+    opacity: 0;
+  }
+}

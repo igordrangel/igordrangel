@@ -1,17 +1,13 @@
 <div class="card border border-base-300 bg-base-100/80 backdrop-blur-sm">
-  <figure class="relative w-full" [class.h-72]="!compact()" [class.h-40]="compact()">
-    @if (thumbnailIsLoading()) {
-      <app-skeleton variant="rect" class="w-full h-full absolute inset-0" />
-    }
-
-    <img
-      class="relative transition-opacity duration-300"
-      [class.opacity-0]="thumbnailIsLoading()"
-      [ngSrc]="thumbnail()"
-      [attr.alt]="label()"
-      width="1024"
-      height="768"
-      (load)="thumbnailIsLoading.set(false)"
+  <figure
+    class="relative w-full overflow-hidden"
+    [class]="compact() ? 'h-36 sm:h-40' : 'h-48 sm:h-56 md:h-72'"
+  >
+    <app-loading-image
+      [src]="thumbnail()"
+      [alt]="label()"
+      fill
+      fit="cover"
     />
   </figure>
 
@@ -19,7 +15,7 @@
     <h2 class="card-title" [class.text-base]="compact()">{{ label() }}</h2>
     <p [class.text-sm]="compact()">{{ description() }}</p>
 
-    <div class="card-actions items-center justify-end empty:hidden">
+    <div class="card-actions flex-wrap items-center justify-end empty:hidden">
       <ng-content select="[actions]" />
     </div>
   </div>

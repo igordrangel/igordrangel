@@ -1,0 +1,15 @@
+@utility page-title {
+  @apply max-w-4xl text-balance font-semibold leading-tight text-base-content text-3xl sm:text-4xl lg:text-5xl;
+}
+
+@utility page-lead {
+  @apply max-w-2xl text-base leading-relaxed text-neutral-400 sm:text-lg;
+}
+
+@utility section-title {
+  @apply px-4 pb-1 text-2xl font-bold border-b-4 border-neutral-200 text-base-content sm:text-3xl;
+}
+
+@utility section-lead {
+  @apply max-w-2xl px-4 text-center text-base leading-relaxed text-neutral-400 sm:text-lg;
+}

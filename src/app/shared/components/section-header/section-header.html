@@ -1,0 +1,11 @@
+<div class="flex flex-col items-center gap-4 text-center">
+  <h2 appReveal [class]="titleClass()">
+    {{ title() }}
+  </h2>
+
+  @if (description()) {
+    <p appReveal [class]="descriptionClass()">
+      {{ description() }}
+    </p>
+  }
+</div>

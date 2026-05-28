@@ -1,0 +1,13 @@
+<article class="flex flex-col items-center gap-8 my-12 sm:gap-12 sm:my-20 lg:gap-16 lg:my-25">
+  <header class="flex flex-col items-center gap-4 px-4 text-center">
+    <div class="avatar motion-reveal-scale motion-delay-1">
+      <div class="flex size-20 items-center justify-center sm:size-24">
+        <ng-content select="[heroIcon]" />
+      </div>
+    </div>
+
+    <ng-content select="[pageHeroTitle]" />
+    <ng-content select="[pageHeroSubtitle]" />
+    <ng-content select="[pageHeroActions]" />
+  </header>
+</article>

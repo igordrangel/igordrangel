@@ -1,17 +1,14 @@
-import { NgOptimizedImage } from '@angular/common';
-import { booleanAttribute, Component, input, signal } from '@angular/core';
-import { Skeleton } from '../skeleton';
+import { LoadingImage } from '@/shared/components/loading-image';
+import { booleanAttribute, Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.html',
-  imports: [NgOptimizedImage, Skeleton],
+  imports: [LoadingImage],
 })
 export class Card {
   readonly thumbnail = input.required<string>();
   readonly label = input.required<string>();
   readonly description = input.required<string>();
   readonly compact = input(false, { transform: booleanAttribute });
-
-  readonly thumbnailIsLoading = signal(true);
 }

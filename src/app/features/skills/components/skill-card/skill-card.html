@@ -1,0 +1,124 @@
+<article
+  class="skill-card group relative overflow-hidden rounded-2xl border bg-base-100/80 backdrop-blur-sm transition-[transform,box-shadow,border-color] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:hover:translate-y-0 hover:-translate-y-1"
+  [class]="
+    theme().border +
+    ' ' +
+    theme().borderHover +
+    ' ' +
+    theme().shadow +
+    ' ' +
+    theme().shadowHover +
+    ' ' +
+    scrollDelayClass()
+  "
+>
+  <div
+    class="pointer-events-none absolute -top-24 -right-16 size-56 rounded-full blur-3xl animate-skill-glow motion-reduce:animate-none"
+    [class]="theme().glowA"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="pointer-events-none absolute -bottom-20 -left-12 size-48 rounded-full blur-3xl animate-skill-glow motion-reduce:animate-none [animation-delay:1.5s]"
+    [class]="theme().glowB"
+    aria-hidden="true"
+  ></div>
+
+  <div
+    class="skill-card-shine pointer-events-none absolute inset-0 z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100 motion-reduce:opacity-0"
+    aria-hidden="true"
+  ></div>
+
+  <div
+    class="relative grid min-h-0 grid-cols-1"
+    [class]="
+      skill().highlight
+        ? 'min-h-0 lg:min-h-56 lg:grid-cols-[minmax(12rem,1.1fr)_1.9fr]'
+        : 'min-h-0'
+    "
+  >
+    <figure
+      class="skill-card-grid relative flex items-center justify-center overflow-hidden border-b border-base-300/80 bg-gradient-to-br"
+      [class]="
+        theme().panel +
+        (skill().highlight
+          ? ' min-h-36 p-5 sm:min-h-44 sm:p-6 lg:min-h-full lg:border-b-0 lg:border-r'
+          : ' min-h-32 p-4 sm:min-h-36')
+      "
+    >
+      <div
+        class="pointer-events-none absolute inset-4 rounded-full border animate-skill-ring-spin motion-reduce:animate-none sm:inset-6"
+        [class]="theme().ring"
+        aria-hidden="true"
+      ></div>
+
+      @if (skill().highlight) {
+        <img
+          fill
+          class="pointer-events-none object-cover opacity-[0.07] blur-[1px] motion-reduce:opacity-0"
+          ngSrc="/assets/images/koala-ui.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+      }
+
+      <div class="relative flex flex-col items-center gap-3">
+        @if (skill().image) {
+          <app-loading-image
+            [src]="skill().image!"
+            [alt]="skill().label + ' logo'"
+            [width]="96"
+            [height]="96"
+            skeletonVariant="circle"
+            skeletonClass="size-16 sm:size-20 lg:size-24"
+            fadeDuration="500"
+            [imgClass]="
+              'object-contain drop-shadow-[0_8px_24px_rgba(0,0,0,0.45)] animate-skill-logo-float motion-reduce:animate-none ' +
+              (skill().highlight ? 'size-16 sm:size-20 lg:size-24' : 'size-14 sm:size-16')
+            "
+          />
+        } @else if (skill().icon) {
+          <i
+            [class]="
+              skill().icon +
+              ' text-5xl drop-shadow-lg sm:text-6xl lg:text-7xl animate-skill-logo-float motion-reduce:animate-none ' +
+              theme().icon
+            "
+            aria-hidden="true"
+          ></i>
+        }
+      </div>
+    </figure>
+
+    <div
+      class="relative flex flex-col justify-center gap-2 p-4 sm:gap-3"
+      [class]="skill().highlight ? 'sm:p-6 lg:p-8' : 'sm:p-5'"
+    >
+      @if (skill().badge) {
+        <span class="badge badge-primary w-fit gap-1 shadow-md shadow-primary/20">
+          <i class="fa-solid fa-star text-[0.55rem]" aria-hidden="true"></i>
+          {{ skill().badge }}
+        </span>
+      }
+
+      <h3
+        class="font-bold tracking-tight text-base-content"
+        [class]="skill().highlight ? 'text-lg sm:text-xl md:text-2xl' : 'text-base sm:text-lg'"
+      >
+        {{ skill().label }}
+      </h3>
+
+      @if (skill().description) {
+        <p class="text-sm leading-relaxed text-neutral-400 sm:text-base">
+          {{ skill().description }}
+        </p>
+      }
+
+      @if (skill().icon && skill().highlight) {
+        <div class="mt-1 flex items-center gap-2 text-xs text-neutral-500">
+          <i [class]="skill().icon + ' ' + theme().icon" aria-hidden="true"></i>
+          <span>Stack principal</span>
+        </div>
+      }
+    </div>
+  </div>
+</article>

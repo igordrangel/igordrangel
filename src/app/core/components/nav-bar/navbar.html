@@ -1,12 +1,13 @@
 <header
-  class="mb-8 rounded-b-2xl border border-t-0 border-base-300 bg-base-100/80 backdrop-blur-sm"
+  class="mb-4 rounded-b-2xl border border-t-0 border-base-300 bg-base-100/80 backdrop-blur-sm sm:mb-8"
 >
-  <nav class="flex items-center justify-center py-4 gap-2">
+  <nav class="flex flex-wrap items-center justify-center gap-1 px-2 py-3 sm:gap-2 sm:px-4 sm:py-4">
     @for (link of links; track $index) {
       <a
         appButton
         btnVariant="ghost"
         btnSize="sm"
+        class="text-sm sm:text-base"
         routerLinkActive="bg-neutral-300 text-neutral-900"
         [routerLinkActiveOptions]="{ exact: true }"
         [routerLink]="link.path"

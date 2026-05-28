@@ -1,0 +1,24 @@
+@if (isLoading()) {
+  <app-skeleton [variant]="skeletonVariant()" [class]="skeletonClass()" />
+}
+
+@if (fill()) {
+  <img
+    fill
+    [ngSrc]="src()"
+    [attr.alt]="alt()"
+    [class]="imageClass()"
+    [priority]="priority()"
+    (load)="onLoad()"
+  />
+} @else {
+  <img
+    [ngSrc]="src()"
+    [attr.alt]="alt()"
+    [class]="imageClass()"
+    [priority]="priority()"
+    [width]="width()!"
+    [height]="height()!"
+    (load)="onLoad()"
+  />
+}
