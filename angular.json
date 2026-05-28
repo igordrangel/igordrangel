@@ -52,6 +52,17 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+            },
+            "e2e": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -64,6 +75,9 @@
             },
             "development": {
               "buildTarget": "igordrangel:build:development"
+            },
+            "e2e": {
+              "buildTarget": "igordrangel:build:e2e"
             }
           },
           "defaultConfiguration": "development"

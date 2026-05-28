@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './src/app/shared/components',
+  testDir: './e2e',
   testMatch: '**/*.e2e.spec.ts',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -13,9 +13,10 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
   webServer: {
-    command: 'npx ng serve --configuration e2e --host 127.0.0.1 --port 4310',
+    command:
+      'node generate-icons.js && bunx ng serve --configuration e2e --host 127.0.0.1 --port 4310',
     url: 'http://127.0.0.1:4310',
-    reuseExistingServer: false,
+    reuseExistingServer: !process.env.CI,
     timeout: 120000,
   },
   projects: [

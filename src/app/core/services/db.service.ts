@@ -58,12 +58,14 @@ export class DbService {
         thumbnail: 'https://opengraph.githubassets.com/1/igordrangel/desafio-01-react-rocketseat',
         label: 'Rocketseat — Desafio 01',
         description: 'Desafio 01 — Praticando os conceitos do ReactJS na trilha Ignite.',
+        siteUrl: 'https://desafio-01-react-rocketseat.vercel.app/',
         githubUrl: 'https://github.com/igordrangel/desafio-01-react-rocketseat',
       },
       {
         thumbnail: 'https://opengraph.githubassets.com/1/igordrangel/desafio-02-react-rocketseat',
         label: 'Rocketseat — Desafio 02',
         description: 'Desafio 02 — Criando SPAs com ReactJS na trilha Ignite.',
+        siteUrl: 'https://desafio-02-react-rocketseat-5ihpjeuj7-igordrangel.vercel.app/',
         githubUrl: 'https://github.com/igordrangel/desafio-02-react-rocketseat',
       },
       {
@@ -376,8 +378,7 @@ export class DbService {
           { label: 'Azure Storage', details: 'Blob Storage' },
           {
             label: 'NestJS',
-            details:
-              'Koala Nest (Biblioteca Open Source desenvolvida por mim para a comunidade)',
+            details: 'Koala Nest (Biblioteca Open Source desenvolvida por mim para a comunidade)',
           },
           { label: 'MySQL', details: 'Prisma' },
           { label: 'Node.js' },
