@@ -12,6 +12,6 @@ export class Navbar {
     { label: 'Início', path: '/' },
     { label: 'Projetos', path: '/projetos' },
     { label: 'Carreira', path: '/carreira' },
-    { label: 'Contato', path: '/contato' },
+    { label: 'Skills', path: '/skills' },
   ];
 }

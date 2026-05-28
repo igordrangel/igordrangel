@@ -1,2 +1,9 @@
 /* Generated Automatically - Do not edit manually */
 
+@utility projects {
+  &::after {
+    -webkit-mask-image: url('/assets/icons/projects.svg');
+    mask-image: url('/assets/icons/projects.svg');
+  }
+}
+

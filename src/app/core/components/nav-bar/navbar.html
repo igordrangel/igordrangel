@@ -8,6 +8,7 @@
         btnVariant="ghost"
         btnSize="sm"
         routerLinkActive="bg-neutral-300 text-neutral-900"
+        [routerLinkActiveOptions]="{ exact: true }"
         [routerLink]="link.path"
       >
         {{ link.label }}

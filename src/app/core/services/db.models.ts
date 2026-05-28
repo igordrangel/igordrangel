@@ -3,6 +3,7 @@ export interface Project {
   label: string;
   description: string;
   docUrl?: string;
+  siteUrl?: string;
   githubUrl?: string;
   npmUrl?: string;
 }

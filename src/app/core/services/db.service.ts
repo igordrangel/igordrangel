@@ -3,6 +3,16 @@ import { Project, SocialMedia } from './db.models';
 
 @Injectable({ providedIn: 'root' })
 export class DbService {
+  get featuredSaas(): Project {
+    return {
+      thumbnail: '/assets/images/solicita-ai.jpg',
+      label: 'Solicita.ai',
+      description:
+        'Plataforma inteligente de gestão de solicitações. Organiza, automatiza e simplifica o atendimento com fluxos personalizáveis, bases de conhecimento e agentes de IA integrados.',
+      siteUrl: 'https://solicita-ai.com',
+    };
+  }
+
   get mainProjects(): Project[] {
     return [
       {
@@ -43,7 +53,49 @@ export class DbService {
   }
 
   get projects(): Project[] {
-    return [...this.mainProjects];
+    return [
+      ...this.mainProjects,
+      {
+        thumbnail:
+          'https://opengraph.githubassets.com/1/igordrangel/desafio-01-react-rocketseat',
+        label: 'Rocketseat — Desafio 01',
+        description: 'Desafio 01 — Praticando os conceitos do ReactJS na trilha Ignite.',
+        githubUrl: 'https://github.com/igordrangel/desafio-01-react-rocketseat',
+      },
+      {
+        thumbnail:
+          'https://opengraph.githubassets.com/1/igordrangel/desafio-02-react-rocketseat',
+        label: 'Rocketseat — Desafio 02',
+        description: 'Desafio 02 — Criando SPAs com ReactJS na trilha Ignite.',
+        githubUrl: 'https://github.com/igordrangel/desafio-02-react-rocketseat',
+      },
+      {
+        thumbnail: 'https://opengraph.githubassets.com/1/igordrangel/flappy-bird',
+        label: 'Flappy Bird',
+        description:
+          'Recriação do clássico Flappy Bird em JavaScript, com física de voo, colisão e pontuação.',
+        githubUrl: 'https://github.com/igordrangel/flappy-bird',
+      },
+      {
+        thumbnail: 'https://opengraph.githubassets.com/1/igordrangel/local_streaming',
+        label: 'Local Streaming',
+        description:
+          'Solução para transmissão e consumo de mídia em rede local, sem depender de serviços externos.',
+        githubUrl: 'https://github.com/igordrangel/local_streaming',
+      },
+      {
+        thumbnail: 'https://opengraph.githubassets.com/1/igordrangel/launch-countdown-timer',
+        label: 'Launch Countdown',
+        description:
+          'Timer de contagem regressiva para lançamentos, com layout desafiador e foco em CSS.',
+        githubUrl: 'https://github.com/igordrangel/launch-countdown-timer',
+      },
+    ];
+  }
+
+  get otherProjects(): Project[] {
+    const mainLabels = new Set(this.mainProjects.map((project) => project.label));
+    return this.projects.filter((project) => !mainLabels.has(project.label));
   }
 
   get socialMedias(): SocialMedia[] {

@@ -1,0 +1,64 @@
+<app-card
+  [thumbnail]="project().thumbnail"
+  [label]="project().label"
+  [description]="project().description"
+  [compact]="compact()"
+>
+  <ng-container actions>
+    @if (project().siteUrl) {
+      <a
+        appButton
+        btnVariant="ghost"
+        [btnSize]="compact() ? 'xs' : 'sm'"
+        class="bg-neutral-300 text-neutral-900"
+        [attr.href]="project().siteUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Acessar
+      </a>
+    }
+
+    @if (project().docUrl) {
+      <a
+        appButton
+        btnVariant="ghost"
+        [btnSize]="compact() ? 'xs' : 'sm'"
+        class="bg-neutral-300 text-neutral-900"
+        [attr.href]="project().docUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Documentação
+      </a>
+    }
+
+    @if (project().githubUrl) {
+      <a
+        appButton
+        btnVariant="ghost"
+        [btnSize]="compact() ? 'sm' : 'lg'"
+        btnCircle
+        [attr.href]="project().githubUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-github" [class]="compact() ? 'text-xl' : 'text-2xl'"></i>
+      </a>
+    }
+
+    @if (project().npmUrl) {
+      <a
+        appButton
+        btnVariant="ghost"
+        [btnSize]="compact() ? 'sm' : 'lg'"
+        btnCircle
+        [attr.href]="project().npmUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-npm" [class]="compact() ? 'text-xl' : 'text-2xl'"></i>
+      </a>
+    }
+  </ng-container>
+</app-card>

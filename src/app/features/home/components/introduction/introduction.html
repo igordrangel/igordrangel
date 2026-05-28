@@ -1,6 +1,6 @@
-<div class="flex flex-col items-center gap-4 text-center my-25">
-  <div class="avatar">
-    <div class="w-24 rounded">
+<div class="flex flex-col items-center gap-4 text-center my-25 px-4">
+  <div class="avatar motion-reveal-scale motion-delay-1">
+    <div class="w-24 rounded overflow-hidden">
       <img
         ngSrc="https://github.com/igordrangel.png"
         alt="Igor D. Rangel"
@@ -11,10 +11,10 @@
     </div>
   </div>
 
-  <h1 class="font-semibold text-5xl">
+  <h1 class="motion-reveal motion-delay-2 max-w-4xl font-semibold text-5xl text-base-content">
     Transformando sonho em realidade com código e criatividade.
   </h1>
-  <p class="max-w-2xl text-lg text-neutral-400">
+  <p class="motion-reveal motion-delay-3 max-w-2xl text-lg text-neutral-400">
     Sou um <strong class="text-neutral-200">Desenvolvedor Full-Stack</strong>, e sou dedicado a
     transformar ideias em aplicações web inovadoras. Fique a vontade para explorar meus projetos,
     onde minha especialidade está em desenvolvimento
@@ -23,13 +23,13 @@
     <strong class="text-neutral-200">aplicações WEB</strong>.
   </p>
 
-  <nav>
+  <nav class="motion-reveal motion-delay-4 flex flex-wrap items-center justify-center gap-2">
     <a
       routerLink="/projetos"
       appButton
       btnVariant="neutral"
       btnSize="sm"
-      class="bg-neutral-300 hover:bg-neutral-400 text-neutral-900"
+      class="bg-neutral-300 hover:bg-neutral-400 text-neutral-900 transition-transform duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]"
     >
       Meus Projetos
     </a>
@@ -39,6 +39,7 @@
       appButton
       btnVariant="ghost"
       btnSize="sm"
+      class="transition-transform duration-300 ease-out hover:scale-[1.02] active:scale-[0.98]"
     >
       LinkedIn
       <i class="fa-solid fa-arrow-up-long opacity-50 rotate-45 text-[0.6rem]"></i>

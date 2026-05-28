@@ -1,0 +1,66 @@
+<article class="projects-hero flex flex-col items-center gap-16 my-25">
+  <header class="flex flex-col items-center gap-4 text-center px-4">
+    <div class="avatar motion-reveal-scale motion-delay-1">
+      <div class="flex size-24 items-center justify-center">
+        <app-projects-hero-icon />
+      </div>
+    </div>
+
+    <h1 class="motion-reveal motion-delay-2 max-w-4xl font-semibold text-5xl text-base-content">
+      Do produto em produção às bibliotecas que a comunidade usa no dia a dia.
+    </h1>
+    <p class="motion-reveal motion-delay-3 max-w-2xl text-lg text-neutral-400">
+      Uma seleção do que construí: o <strong class="text-neutral-200">Solicita.ai</strong>, o
+      ecossistema <strong class="text-neutral-200">Koala</strong> e projetos em
+      <strong class="text-neutral-200">Angular</strong>,
+      <strong class="text-neutral-200">Node.js</strong> e
+      <strong class="text-neutral-200">React</strong>.
+    </p>
+  </header>
+</article>
+
+<app-saas-featured class="mb-16 block" [saas]="db.featuredSaas" />
+
+<article class="flex flex-col items-center gap-16">
+  <h2
+    appReveal
+    class="motion-reveal-scroll motion-delay-1 text-3xl font-bold px-4 pb-1 border-b-4 border-neutral-200 text-base-content"
+  >
+    Em Destaque
+  </h2>
+  <p
+    appReveal
+    class="motion-reveal-scroll motion-delay-2 max-w-2xl px-4 text-center text-lg text-neutral-400"
+  >
+    Ecossistema Koala e bibliotecas que impulsionam o desenvolvimento de aplicações web modernas.
+  </p>
+
+  <div
+    appReveal
+    class="motion-reveal-scroll motion-delay-3 grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-2"
+  >
+    @for (project of db.mainProjects; track project.label) {
+      <app-project-card [project]="project" />
+    }
+  </div>
+</article>
+
+@if (db.otherProjects.length) {
+  <article class="flex flex-col items-center gap-16 pb-25 pt-16">
+    <h2
+      appReveal
+      class="motion-reveal-scroll motion-delay-1 text-3xl font-bold px-4 pb-1 border-b-4 border-neutral-200 text-base-content"
+    >
+      Outros projetos
+    </h2>
+
+    <div
+      appReveal
+      class="motion-reveal-scroll motion-delay-2 grid w-full grid-cols-1 gap-4 px-4 lg:grid-cols-4"
+    >
+      @for (project of db.otherProjects; track project.label) {
+        <app-project-card [project]="project" compact />
+      }
+    </div>
+  </article>
+}

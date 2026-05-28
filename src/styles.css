@@ -1,7 +1,70 @@
 @import 'tailwindcss';
 
 @import './theme/animations.css';
+@import './theme/motion.css';
+@import './theme/background.css';
 @import './theme/icons.css';
+
+@theme {
+  --animate-projects-panel-float: projects-panel-float 4s ease-in-out infinite;
+  --animate-projects-bracket-pulse: projects-bracket-pulse 2.4s ease-in-out infinite;
+  --animate-projects-code-draw: projects-code-draw 2.4s ease-in-out infinite;
+  --animate-projects-dot-orbit: projects-dot-orbit 5s linear infinite;
+  --animate-projects-dot-pulse: projects-dot-pulse 2s ease-in-out infinite;
+
+  @keyframes projects-panel-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+
+  @keyframes projects-bracket-pulse {
+    0%,
+    100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes projects-code-draw {
+    0%,
+    100% {
+      stroke-dashoffset: 20;
+      opacity: 0.4;
+    }
+    50% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes projects-dot-orbit {
+    0% {
+      transform: rotate(0deg) translateX(34px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translateX(34px) rotate(-360deg);
+    }
+  }
+
+  @keyframes projects-dot-pulse {
+    0%,
+    100% {
+      opacity: 0.35;
+      transform: scale(0.85);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+  }
+}
 @import './theme/grid.css';
 
 @custom-variant dark (&:where(.dark, .dark *));

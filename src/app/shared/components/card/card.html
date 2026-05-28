@@ -1,5 +1,5 @@
 <div class="card border border-base-300 bg-base-100/80 backdrop-blur-sm">
-  <figure class="relative w-full h-72">
+  <figure class="relative w-full" [class.h-72]="!compact()" [class.h-40]="compact()">
     @if (thumbnailIsLoading()) {
       <app-skeleton variant="rect" class="w-full h-full absolute inset-0" />
     }
@@ -15,9 +15,9 @@
     />
   </figure>
 
-  <div class="card-body">
-    <h2 class="card-title">{{ label() }}</h2>
-    <p>{{ description() }}</p>
+  <div class="card-body" [class.p-4]="compact()">
+    <h2 class="card-title" [class.text-base]="compact()">{{ label() }}</h2>
+    <p [class.text-sm]="compact()">{{ description() }}</p>
 
     <div class="card-actions items-center justify-end empty:hidden">
       <ng-content select="[actions]" />

@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component, input, signal } from '@angular/core';
+import { booleanAttribute, Component, input, signal } from '@angular/core';
 import { Skeleton } from '../skeleton';
 
 @Component({
@@ -11,6 +11,7 @@ export class Card {
   readonly thumbnail = input.required<string>();
   readonly label = input.required<string>();
   readonly description = input.required<string>();
+  readonly compact = input(false, { transform: booleanAttribute });
 
   readonly thumbnailIsLoading = signal(true);
 }
