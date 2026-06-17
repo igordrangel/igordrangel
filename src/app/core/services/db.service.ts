@@ -21,14 +21,14 @@ export class DbService {
         description:
           'A experiência do shadcn/ui, construída nativamente para Angular. Impulsionado por Signals e TailwindCSS v4. Compatível com SSR, pronto para funcionar sem zone.js. Sem complicações, apenas resultados.',
         docUrl: 'https://ui.koalarx.com',
-        githubUrl: 'https://github.com/igordrangel/koala',
-        npmUrl: 'https://www.npmjs.com/package/@koalarx/ui-cli',
+        githubUrl: 'https://github.com/igordrangel/koala-ui',
+        npmUrl: 'https://www.npmjs.com/package/@koalarx/ui',
       },
       {
         thumbnail: '/assets/images/koala-nest.jpg',
         label: 'Koala Nest',
         description:
-          'Uma biblioteca robusta para desenvolvimento backend com NestJS, Domain-Driven Design e Prisma.',
+          'A experiência shadcn/ui, feita nativamente para NestJS. Com DDD e TypeORM. Copie módulos para o seu repositório — sem dependências opacas.',
         docUrl: 'https://nest.koalarx.com',
         githubUrl: 'https://github.com/igordrangel/koala-nest',
       },
