@@ -151,15 +151,10 @@ Bibliotecas open source que desenvolvo para a comunidade Angular / NestJS.
 ## 📊 GitHub Stats
 
 <div align="center">
-
-| | |
-| :---: | :---: |
-| <img src="https://github-readme-stats.vercel.app/api?username=igordrangel&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats" width="420" /> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=igordrangel&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&card_width=320" alt="Top languages" width="320" /> |
-
-<br />
-
-<img src="https://streak-stats.demolab.com/?user=igordrangel&theme=tokyonight&hide_border=true" alt="GitHub streak" />
-
+  <img src="https://github-readme-stats.shion.dev/api?username=igordrangel&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" height="165" />
+  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=igordrangel&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top languages" height="165" />
+  <br /><br />
+  <img src="https://streak-stats.demolab.com/?user=igordrangel&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </div>
 
 ---
