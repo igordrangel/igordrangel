@@ -11,7 +11,7 @@ Transformo ideias em aplicações web — do front ao back, incluindo DevOps.
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/igordrangel)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/igordrangel/)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@igord.rangel5958)
-[![Portfolio](https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=angular&logoColor=DD0031)](https://github.com/igordrangel/igordrangel)
+[![Portfolio](https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=googlechrome&logoColor=white)](https://igordrangel.com.br/)
 
 <br />
 
@@ -152,17 +152,13 @@ Bibliotecas open source que desenvolvo para a comunidade Angular / NestJS.
 
 <div align="center">
 
-<a href="https://github.com/igordrangel">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=igordrangel&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats" />
-</a>
-&nbsp;
-<a href="https://github.com/igordrangel">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=igordrangel&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
-</a>
+| | |
+| :---: | :---: |
+| <img src="https://github-readme-stats.vercel.app/api?username=igordrangel&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats" width="420" /> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=igordrangel&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&card_width=320" alt="Top languages" width="320" /> |
 
-<br /><br />
+<br />
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=igordrangel&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+<img src="https://streak-stats.demolab.com/?user=igordrangel&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 
 </div>
 
