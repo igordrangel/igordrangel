@@ -37,6 +37,7 @@ export class DbService {
         label: 'Koala Utils',
         description:
           'Biblioteca utilitária para validações, conversões e abstrações de problemas comuns em JavaScript/TypeScript.',
+        docUrl: 'https://utils.koalarx.com/',
         githubUrl: 'https://github.com/igordrangel/koala-utils',
         npmUrl: 'https://www.npmjs.com/package/@koalarx/utils',
       },
