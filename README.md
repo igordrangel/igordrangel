@@ -26,7 +26,7 @@ Transformo ideias em aplicações web — do front ao back, incluindo DevOps.
 - 🔭 Especialidade em **Angular** (6 → 20+), SPAs, PWAs, SSR, Signals e design systems
 - 🌱 Criador do ecossistema **Koala** (UI, Nest, Utils, Scrapping)
 - 💼 Atuação full-stack com **NestJS**, mensageria, cloud e DevOps
-- 💡 Também construo produtos — ex.: [Solicita.ai](https://solicita-ai.com)
+- 💡 Ecossistema open source — [Koalarx](https://koalarx.com)
 
 ---
 
@@ -119,9 +119,9 @@ Bibliotecas open source que desenvolvo para a comunidade Angular / NestJS.
   </tr>
 </table>
 
-### 💼 Produto
+### 🐨 Ecossistema
 
-**[Solicita.ai](https://solicita-ai.com)** — plataforma inteligente de gestão de solicitações, com fluxos personalizáveis, bases de conhecimento e agentes de IA.
+**[Ecossistema Koala](https://koalarx.com)** — UI, Nest e Utils para aplicações Angular e NestJS, com foco em produtividade e consistência.
 
 ---
 

@@ -5,11 +5,11 @@ import { Career, Project, Skill, SkillCategory, SocialMedia } from './db.models'
 export class DbService {
   get featuredSaas(): Project {
     return {
-      thumbnail: '/assets/images/solicita-ai.jpg',
-      label: 'Solicita.ai',
+      thumbnail: '/assets/images/ecossistema-koala.jpg',
+      label: 'Ecossistema Koala',
       description:
-        'Plataforma inteligente de gestão de solicitações. Organiza, automatiza e simplifica o atendimento com fluxos personalizáveis, bases de conhecimento e agentes de IA integrados.',
-      siteUrl: 'https://solicita-ai.com',
+        'O ecossistema Koala para aplicações Angular e NestJS. Componentes de UI, scaffolding de API e utilitários TypeScript pensados para produtividade e consistência — Koala UI, Koala Nest e Koala Utils.',
+      siteUrl: 'https://koalarx.com',
     };
   }
 
