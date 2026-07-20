@@ -322,7 +322,7 @@ export class DbService {
         label: 'Desenvolvedor II',
         description:
           'Desenvolvimento de aplicações internas da Rede Globo(Cliente) e aplicações de mensageria.',
-        url: 'https://www.linkedin.com/company/metaoficial/mycompany/verification',
+        url: 'https://www.linkedin.com/company/insi-global/mycompany/verification',
         startDate: new Date('2020-01-01'),
         endDate: new Date('2022-01-01'),
         responsibilities: [
@@ -346,14 +346,14 @@ export class DbService {
           { label: 'Azure Functions', details: 'Cron Trigger e Queue Trigger' },
           { label: 'Azure Storage', details: 'Blob Storage' },
         ],
-        company: 'Meta (Contratante) - Rede Globo (Cliente)',
+        company: 'Insi (Contratante) - Rede Globo (Cliente)',
         location: 'Remoto (Rio de Janeiro, RJ)',
       },
       {
         label: 'Desenvolvedor III',
         description:
           'Desenvolvimento de aplicações internas da Rede Globo(Cliente) e aplicações de mensageria.',
-        url: 'https://www.linkedin.com/company/metaoficial/mycompany/verification',
+        url: 'https://www.linkedin.com/company/insi-global/mycompany/verification',
         startDate: new Date('2022-01-01'),
         responsibilities: [
           'Desenvolvimento de um APP de Gestão de Seguros utilizando Angular 16 com integração direta ao Sharepoint.',
@@ -386,7 +386,7 @@ export class DbService {
           { label: 'OpenID', details: 'SSO' },
           { label: 'Git', details: 'Gitlab' },
         ],
-        company: 'Meta (Contratante) - Rede Globo (Cliente)',
+        company: 'Insi (Contratante) - Rede Globo (Cliente)',
         location: 'Remoto (Rio de Janeiro, RJ)',
       },
     ];
